@@ -68,7 +68,7 @@
 .header__navbar-mobile-menu {
     /* width: 100%; */
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform: translateX(-100%);
@@ -155,10 +155,10 @@
 }
 
 .menu-mobile-overlay {
-    position: absolute;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    /* height: 2000px; */
+    /* height: 100%; */
     top: 0;
     /* left: 266px; */
     bottom: 0;
