@@ -3,6 +3,7 @@
     border: none;
 }
 
+
 .card__icon > i,
 .commitment__icon > i {
     font-size: 3.2rem;
@@ -26,6 +27,7 @@
 .commitment__direct {
     color: #D1AF66;
     font-size: 1.4rem;
+    display: block;
 }
 
 /* Card Category */
@@ -54,7 +56,7 @@
 
 /* Commitment */
 
-.commitment__text {
+.commitment__text-heading {
     font-size: 3.6rem;
     font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
 }

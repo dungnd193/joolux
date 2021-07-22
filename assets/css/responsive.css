@@ -61,8 +61,56 @@
 }
 /* Mobile */
 @media (max-width: 739px) {
+    .mt-20-mobile {
+        margin-top: 20px;
+    }
+
+    .mt-30-mobile {
+        margin-top: 30px;
+    }
+
+    .mt-40-mobile {
+        margin-top: 40px;
+    }
+
+    .pb-30-mobile {
+        padding-bottom: 30px;
+    }
+
+    .pb-40-mobile {
+        padding-bottom: 40px;
+    }
+
     .navigation-manual,
     .navigation-auto {
         margin-top: -24px;
     }
+
+    /* Card CSS */
+
+    .card__info {
+        display: flex;
+    }
+
+    .card__text {
+        margin-left: 16px;
+    }
+
+    .card__heading {
+        margin: 0px 0 20px;
+    }
+
+    /* Commitment */
+    .commitment__info {
+        display: flex;
+    }
+    
+    .commitment__text {
+        margin-left: 16px;
+    }
+    
+    .commitment__heading {
+        margin: 0px 0 12px;
+    }
+
 }
