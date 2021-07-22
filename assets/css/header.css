@@ -190,7 +190,7 @@
 
 .header__category-left-item:hover {
     border-bottom: 1px solid #101010;
-    animation: fadeIn linear 0.2s;
+    /* animation: fadeIn linear 0.2s; */
     /* cursor: pointer; */
 }
 
@@ -225,6 +225,7 @@
     border-left: 1px solid #CFCFCF;
     border-bottom: 1px solid #CFCFCF;
     border-right: 1px solid #CFCFCF;
+    z-index: 1;
 }
 
 .dropdown__brand,

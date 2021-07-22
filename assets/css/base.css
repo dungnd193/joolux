@@ -20,10 +20,33 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+/* a:hover {
+    color: currentColor;
+    text-decoration: none;
+} */
+
 .hide-on-pc {
     display: none;
 }
 
+.ul-show-on-mobile {
+    display: none;
+}
+
+.sold-out {
+    position: relative;
+    opacity: 0.5;
+}
+
+.sold-out::after {
+    content: "Tạm hết hàng";
+    position: absolute;
+    color: red;
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    left: 0%;
+}
 
 .text-align-center {
     text-align: center;
@@ -49,6 +72,10 @@ body {
     margin-top: 30px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
+
 .mt-50 {
     margin-top: 50px;
 }
@@ -57,8 +84,24 @@ body {
     margin-top: 60px;
 }
 
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 .mb-60 {
     margin-bottom: 60px;
+}
+
+.ptb-16 {
+    padding: 16px 0px;
 }
 
 .pb-30 {
@@ -68,6 +111,59 @@ body {
 .pb-60 {
     padding-bottom: 60px
 }
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    float: right;
+}
+
+.pagination-item {
+    margin: 0 4px;
+}
+
+.pagination-item--active .pagination-item__link {
+    border: 1px solid #101010;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #D2AF66;
+    color: #101010;
+    text-decoration: none;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #101010;
+    min-width: 30px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border: 1px solid #CFCFCF;
+    padding: 0 6px;
+}
+
+.pagination-item__link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.pagination-item__link-no-pointer {
+    cursor: default;
+}
+
+.pagination-item__icon {
+    color: #CFCFCF;
+}
+
 /* Animation */
 @keyframes fadeIn {
     from {

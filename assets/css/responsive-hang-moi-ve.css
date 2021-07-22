@@ -1,0 +1,30 @@
+@media (max-width: 991px) {
+    .new-arrival__menu {
+        display: none;
+    }
+}
+
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .filter-search {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .new-arrival__sort-text {
+        display: none;
+    }
+    
+    .new-arrival__select {
+        width: 100%;
+    }
+}

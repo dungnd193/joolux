@@ -117,7 +117,10 @@
 
 .new-arrival__size {
     font-size: 1.2rem;
-    /* font-weight: 300; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .new-arrivial__view-more,

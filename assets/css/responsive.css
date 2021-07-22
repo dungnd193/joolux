@@ -17,11 +17,20 @@
     .hide-on-mobile {
         display: none;
     }
+    .ul-show-on-mobile {
+        display: block;
+    }
 }
 
 @media (min-width: 457px) and (max-width: 767px) {
     .footer__input {
         width: 80%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1023px) {
+    .new-arrival__menu {
+        display: block;
     }
 }
 /* Mobile & Tablet */
