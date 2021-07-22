@@ -20,12 +20,21 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.hide-on-pc {
+    display: none;
+}
+
+
 .text-align-center {
     text-align: center;
 }
 
 .border-bottom {
-    border-bottom: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7 !important;
+}
+
+.border-top {
+    border-top: 1px solid #282828 !important;
 }
 
 .mt-10 {
@@ -50,6 +59,10 @@ body {
 
 .mb-60 {
     margin-bottom: 60px;
+}
+
+.pb-30 {
+    padding-bottom: 30px
 }
 
 .pb-60 {

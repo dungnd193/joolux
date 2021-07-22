@@ -98,6 +98,10 @@
     color: #101010;
     font-size: 1.5rem;
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .new-arrival__price {
@@ -149,6 +153,10 @@
     font-size: 1.5rem;
     margin: 20px 0 8px;
     cursor: pointer;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .blog__heading:hover {
