@@ -263,7 +263,34 @@
     display: none;
 }
 
+.radio-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    border: 2px solid #101010;;
+}
+
+.radio-button::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--black-color);
+    display: none;
+}
+
 .product__menu-item-option > input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.product__menu-item-option > input:checked ~ .radio-button::after {
     display: block;
 }
 
