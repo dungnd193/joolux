@@ -31,5 +31,7 @@
 @media (max-width: 739px) {
     .filter-search__button {
         font-size: 1.3rem;
+        padding: 8px 6px;
     }
+    
 }
