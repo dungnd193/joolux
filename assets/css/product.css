@@ -93,24 +93,45 @@
 
 .filter-search-menu {
     background-color: #FFFFFF;
-    padding: 24px 20px;
     width: 300px;
     height: 100%;
     position: fixed;
     top: 0%;
     left: 0;
     z-index: 3;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     transform: translateX(-100%);
     transition: 0.4s;
+}
+
+.filter-search-menu__overflow-x {
+    padding: 24px 20px;
+    overflow-y: scroll;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.filter-search-menu__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
 }
 
 .filter-search-menu__find {
     background-color: var(--white-color);
     width: 100%;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    left: 0px;
+    /* top: 0px; */
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
     padding: 8px 16px;
 }
 
