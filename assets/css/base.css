@@ -112,6 +112,50 @@ body {
     padding-bottom: 60px
 }
 
+/* Email Register */
+.email-register {
+    background-color: #E7E7E7;
+    padding: 24px 0;
+}
+
+.email-register__heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.email-register__description {
+    font-size: 1.4rem;
+}
+
+.email-register__form {
+    display: flex;
+    align-items: center;
+}
+
+.email-register__input {
+    background-color: var(--white-color);
+    padding: 10px 14px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #101010;
+}
+
+.email-register__input::placeholder {
+    color: #A1A1A1;
+    font-size: 1.4rem;
+}
+
+.email-register__button {
+    color: var(--white-color);
+    background-color: #101010;
+    font-size: 1.4rem;
+    min-width: 132px;
+    height: 40px;
+    padding: 6px 28px;
+    border: 1px solid #101010;
+}
 /* Pagination */
 
 .pagination {

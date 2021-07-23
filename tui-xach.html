@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mua Bán Và Ký Gửi Hàng Hiệu Uy Tín | Joolux</title>
+    <title>Túi xách | Joolux</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="stylesheet" href="./assets/css/content.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive-product.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -106,8 +108,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="header__category-left-item">
-                                <a href="./tui-xach.html">TÚI XÁCH</a>
+                            <li class="header__category-left-item" style="border-bottom: 1px solid #101010;">
+                                <a href="./tui-xach.html" >TÚI XÁCH</a>
                                 <div class="header__category-left-dropdown" style="margin-left: -21px;">
                                     <div class="dropdown__brand">
                                         <h3 class="dropdown__brand-heading">THƯƠNG HIỆU</h3>
@@ -871,233 +873,563 @@
     </div>
 
     <div class="menu-mobile-overlay js-menu-mobile-overlay" id="js-menu-mobile-overlay"></div>
-  
-    <div class="content">
-            <!-- Image Slider Start -->
-            <section class="slider">
-                <!-- radio button start -->
-                <input type="radio" hidden name="radio-btn" id="radio1">
-                <input type="radio" hidden name="radio-btn" id="radio2">
-                <input type="radio" hidden name="radio-btn" id="radio3">
-                <input type="radio" hidden name="radio-btn" id="radio4">
-                <!-- radio button end -->
+    
+    <div class="filter-search-menu" id="js-filter-search-menu">
+        <div class="product__menu-item ptb-16 border-bottom">
+            <h3 class="product__menu-item-heading mb-16">DANH MỤC</h3>
+            <ul class="product__menu-item-list">
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Đồng hồ</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">
+                        Giày & Sneaker</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Phụ kiện</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Túi xách</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+            <h3 class="product__menu-item-heading mb-8">THƯƠNG HIỆU</h3>
+            <div class="product__menu-item-input-group mb-16">
+                <input type="text" placeholder="Tìm Thương Hiệu" class="product__menu-item-input">
+                <i class="product__menu-item-input-icon fas fa-search"></i>
+            </div>
+            <ul class="product__menu-item-list">
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Adidas</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Alexander Wang</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Armani Exchange</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Asics</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Balenciaga</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Bottega Veneta</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Burberry</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Carolina Herbera</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+            <h3 class="product__menu-item-heading mb-8">GIỚI TÍNH</h3>
+            
+            <ul class="product__menu-item-list">
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Nam</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Nữ</h5>
+                </li>
+                <li class="product__menu-item-item">
+                    <input type="checkbox" name="" id="">
+                    <h5 class="product__menu-item-option">Unisex</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">TÌNH TRẠNG KHO</h3>
         
-                <div class="slides">
-                    <!-- Slider image start -->
-                    <div class="slide first">
-                        <img src="./assets/img/slide-1.jpeg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/slide-2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/slide-3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/slide-4.jpg" alt="">
-                    </div>
-                    <!-- Slider image end -->
-                </div>
-                <!-- Automatic navigation start -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <!-- Automatic navigation end -->
-                <!-- manual navigation start -->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-                <!-- manual navigation end -->
-            </section>
-            <!-- Image Slider End -->
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Còn hàng</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Đang giao dịch</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Tạm hết hàng</h5>
+            </li>
+        </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">TÌNH TRẠNG</h3>
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Perfect</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Excellent</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Very Good</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Good</h5>
+            </li>
+        </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">CHẤT LIỆU</h3>
+        <div class="product__menu-item-input-group mb-16">
+            <input type="text" placeholder="Tìm Chất Liệu" class="product__menu-item-input">
+            <i class="product__menu-item-input-icon fas fa-search"></i>
+        </div>
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Acetate</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Canvas</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Cao su</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Cashmere</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Cói</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Cotton</h5>
+            </li>
+            <!-- <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Da</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Da bê</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Da bò</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Da bóng</h5>
+            </li> -->
+        </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">CỠ GIÀY</h3>
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">XS</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">S</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">M</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">2</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">4</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">5</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">6</h5>
+            </li>
+        </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">KHUYẾN MÃI</h3>
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Đang khuyến mãi</h5>
+            </li>
+        </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">GIÁ CẢ</h3>
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Dưới 5.000.000 đ</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">5.000.000 đ tới 10.000.000đ</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">10.000.000 đ tới 15.000.000đ</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">15.000.000 đ tới 20.000.000đ</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">Trên 20.000.000đ</h5>
+            </li>
+        </ul>
+        </div>
+        <div class="product__menu-item ptb-16 border-bottom">
+        <h3 class="product__menu-item-heading mb-8">MÀU SẮC</h3>
+        <div class="product__menu-item-input-group mb-16">
+            <input type="text" placeholder="Tìm MÀU SẮC" class="product__menu-item-input">
+            <i class="product__menu-item-input-icon fas fa-search"></i>
+        </div>
+        <ul class="product__menu-item-list">
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#12 Pink</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#13 Pink Beige</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#24 Red Orange</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#25 Coral</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#35 Brown</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#42 Red</h5>
+            </li>
+            <li class="product__menu-item-item">
+                <input type="checkbox" name="" id="">
+                <h5 class="product__menu-item-option">#54 Wine</h5>
+            </li>
+        </ul>
+        </div>
+        <div class="filter-search-menu__find">
+            <button class="filter-search-menu__find-btn js-filter-search-menu__find-btn">
+                <span class="filter-search__text">Tìm Kiếm</span>
+            </button>
+        </div>
+    </div>
 
-            <section class="card">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 mt-50">
-                            <div class="card__info">
-                                <div class="card__icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="card__text">
-                                    <h3 class="card__heading">Hàng Chính Hãng</h3>
-                                    <p class="card__description">
-                                        Tất cả các sản phẩm trên Joolux đều được qua quy trình kiểm định bằng công nghệ và đội ngũ chuyên gia để đảm bảo chính hãng 100% đến tay khách hàng.
-                                    </p>
-                                    <a href="" class="card__direct">Cam kết từ Joolux</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-50">
-                            <div class="card__info">
-                                <div class="card__icon">
-                                    <i class="fas fa-tag"></i>
-                                </div>
-                                <div class="card__text">
-                                    <h3 class="card__heading">Giá Tốt Nhất</h3>
-                                    <p class="card__description">
-                                        Chúng tôi luôn nỗ lực để mang đến cho khách hàng những sản phẩm chất lượng nhất với giá tốt nhất trên thị trường.
-                                    </p>
-                                    <a href="" class="card__direct">Xem sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-50">
-                            <div class="card__info">
-                                <div class="card__icon">
-                                    <i class="fas fa-layer-group"></i>
-                                </div>
-                                <div class="card__text">
-                                    <h3 class="card__heading">Đa Dạng Dịch Vụ</h3>
-                                    <p class="card__description">
-                                        Joolux mong muốn mang đến cho khách hàng một trải nghiệm trọn vẹn thông qua các dịch vụ đa dạng: ký gửi, kiểm định, spa - chế tác và cho thuê hàng hiệu.
-                                    </p>
-                                    <a href="" class="card__direct">Dịch vụ của chúng tôi</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="filter-search-overlay js-filter-search-overlay" id="js-filter-search-overlay"></div>
 
-            <section class="category-card">
-                <div class="container border-bottom">
-                    <div class="row pb-60 pb-40-mobile">
-                        <div class="col-md-6 mt-50">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-1.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Ưu Đãi Tiền Triệu</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-2.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Christian Dior</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-3.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Túi Hiệu Công Sở</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-4.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Túi Hiệu Dạo Phố</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-5.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Giai điệu ngày hè</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-6.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Ví hiệu thời trang</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
-                        </div>
+    <div class="content">
+      <div class="product__container">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <h3 class="product__link">
+                            <span>Trang chủ</span> 
+                            <span>/</span>
+                            Túi xách
+                      </h3>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                      <h1 class="product__header">
+                        Túi xách
+                      </h1>
+                      <h4 class="product__product-amount">1565 sản phẩm</h4>
+                  </div>
+                  <div class="col-md-6 col-6">
+                    <div class="product__sort">
+                        <h3 class="product__sort-text">Sắp xếp theo: </h3>
+                        <select class="product__select">
+                            <option value="recently-listed">Mới nhất</option>
+                            <option value="highest-price">Giá giảm dần</option>
+                            <option value="lowest-price">Giá tăng dần</option>
+                        </select>
                     </div>
-                </div>
-            </section>
-
-            <section class="commitment">
-                <div class="container border-bottom">
-                    <div class="row pb-60 pb-30-mobile">
-                        <div class="col-lg-3 col-md-12 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <h2 class="commitment__text-heading">Joolux cam kết luôn hỗ trợ bạn</h2>
-                            </div>
+                  </div>
+                  <div class="col-md-12 col-6 filter-search">
+                        <button class="filter-search__button js-filter-search__button">
+                            <i class="filter-search__icon fas fa-list"></i>
+                            <span class="filter-search__text">Bộ Lọc Tìm Kiếm</span>
+                        </button>
+                  </div>
+              </div>
+              <div class="row">
+                    <div class="col-lg-3 product__menu">
+                    
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-16">DANH MỤC</h3>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Túi xách</h5>
+                              </li>
+                          </ul>
                         </div>
-                        <div class="col-lg-3 col-md-4 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <div class="commitment__icon">
-                                    <i class="fas fa-truck-moving"></i>
-                                </div>
-                                <div class="commitment__text">
-                                    <h3 class="commitment__heading">
-                                        Miễn Phí Vận Chuyển
-                                    </h3>
-                                    <p class="commitment__description">
-                                        Tất cả các sản phẩm giao dịch qua Joolux đều được miễn phí vận chuyển đến tay khách hàng tại các thành phố lớn.
-                                    </p>
-                                    <a href="" class="commitment__direct">Chính sách vận chuyển</a>
-                                </div>
-                            </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">THƯƠNG HIỆU</h3>
+                          <div class="product__menu-item-input-group mb-16">
+                              <input type="text" placeholder="Tìm Thương Hiệu" class="product__menu-item-input">
+                              <i class="product__menu-item-input-icon fas fa-search"></i>
+                          </div>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Armani Exchange</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Balenciaga</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Bottega Veneta</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Celine</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Christian Louboutin</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Diesel</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Dior</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Dolce & Gabbana</h5>
+                              </li>
+                          </ul>
                         </div>
-                        <div class="col-lg-3 col-md-4 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <div class="commitment__icon">
-                                    <i class="fas fa-retweet"></i>
-                                </div>
-                                <div class="commitment__text">
-                                    <h3 class="commitment__heading">
-                                        Đổi Trả Linh Hoạt
-                                    </h3>
-                                    <p class="commitment__description">
-                                        Cam kết đổi trả 100% với sản phẩm bị lỗi trong quá trình vận chuyển hoặc không đúng với mô tả trên website.
-                                    </p>
-                                    <a href="" class="commitment__direct">Chính sách đổi trả</a>
-                                </div>
-                            </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">GIỚI TÍNH</h3>
+                          
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Nam</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Nữ</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Unisex</h5>
+                              </li>
+                          </ul>
                         </div>
-                        <div class="col-lg-3 col-md-4 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <div class="commitment__icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="commitment__text">
-                                    <h3 class="commitment__heading">
-                                        Hỗ Trợ Nhanh Chóng
-                                    </h3>
-                                    <p class="commitment__description">
-                                        Chúng tôi luôn sẵn sàng hỗ trợ giải đáp nhanh chóng để mang đến sự hài lòng cho khách hàng.
-                                    </p>
-                                    <a href="" class="commitment__direct">Hotline: 1900 292984</a>
-                                </div>
-                            </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">TÌNH TRẠNG KHO</h3>
+                          
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Còn hàng</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Đang giao dịch</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Tạm hết hàng</h5>
+                              </li>
+                          </ul>
                         </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">TÌNH TRẠNG</h3>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Perfect</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Excellent</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Very Good</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Good</h5>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">CHẤT LIỆU</h3>
+                          <div class="product__menu-item-input-group mb-16">
+                              <input type="text" placeholder="Tìm Chất Liệu" class="product__menu-item-input">
+                              <i class="product__menu-item-input-icon fas fa-search"></i>
+                          </div>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Acetate</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Canvas</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Cao su</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Cashmere</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Cói</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Cotton</h5>
+                              </li>
+                              <!-- <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Da</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Da bê</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Da bò</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Da bóng</h5>
+                              </li> -->
+                          </ul>
+                        </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">KHUYẾN MÃI</h3>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Đang khuyến mãi</h5>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">GIÁ CẢ</h3>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Dưới 5.000.000 đ</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">5.000.000 đ tới 10.000.000đ</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">10.000.000 đ tới 15.000.000đ</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">15.000.000 đ tới 20.000.000đ</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">Trên 20.000.000đ</h5>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="product__menu-item ptb-16 border-bottom">
+                          <h3 class="product__menu-item-heading mb-8">MÀU SẮC</h3>
+                          <div class="product__menu-item-input-group mb-16">
+                              <input type="text" placeholder="Tìm MÀU SẮC" class="product__menu-item-input">
+                              <i class="product__menu-item-input-icon fas fa-search"></i>
+                          </div>
+                          <ul class="product__menu-item-list">
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#12 Pink</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#13 Pink Beige</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#24 Red Orange</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#25 Coral</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#35 Brown</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#42 Red</h5>
+                              </li>
+                              <li class="product__menu-item-item">
+                                  <input type="checkbox" name="" id="">
+                                  <h5 class="product__menu-item-option">#54 Wine</h5>
+                              </li>
+                          </ul>
+                        </div>
+                    
                     </div>
-                </div>
-            </section>
-
-            <section class="new-arrival">
-                <div class="container border-bottom">
-                    <div class="row mt-30 mt-30-mobile">
-                        <div class="col-md-12 col-sm-12">
-                            <h2 class="new-arrival__text">Hàng Mới Về</h2>
-                        </div>
-                    </div>
-                    <div class="row mb-60">
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-1.jpeg" alt="" class="product__img">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product__info ptb-16 border-bottom">
+                                <img src="./assets/img/tui-xach-img-1.jpeg" alt="" class="product__img">
                                 <div class="product__product-text">
                                     <h3 class="product__heading">Louis Vuitton</h3>
                                     <p class="product__description">
@@ -1108,177 +1440,334 @@
                                 <br>
                                 <span class="product__size">D: 44cm x R: 10cm C: 34 cm</span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-2.jpeg" alt="" class="product__img">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-2.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Louis Vuitton</h3>
+                                        <p class="product__description">
+                                            Balo Louis Vuitton Monogram Eclipse Discovery
+                                        </p>
+                                    </div>
+                                    <span class="product__price">49.300.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 37 cm x R: 20 cm C: 39 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-3.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Chanel</h3>
+                                        <p class="product__description">
+                                            Túi Xách Chanel Boy Medium 2019 The 27th
+                                        </p>
+                                    </div>
+                                    <span class="product__price">96.500.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 25cm x R: 9cm C: 15 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-4.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Dior</h3>
+                                        <p class="product__description">
+                                            Balo Dior Homme Nylon Motion Rucksack
+                                        </p>
+                                    </div>
+                                    <span class="product__price">28.600.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 43cm x R: 11cm C: 38 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-5.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Dior</h3>
+                                        <p class="product__description">
+                                            Túi Xách Lady Dior Medium Cannage Black Leather
+                                        </p>
+                                    </div>
+                                    <span class="product__price">75.300.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 423cm x R: 12cm C: 20 cm</span>
+                                </div>
+                            </div>
+                          
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-6.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Saint Laurent</h3>
+                                        <p class="product__description">
+                                            Túi Xách Saint Laurent Embossed Small Sac de Jour
+                                        </p>
+                                    </div>
+                                    <span class="product__price">51.900.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 32cm x R: 15cm C: 27 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-7.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Dior</h3>
+                                        <p class="product__description">
+                                            Túi Xách Lady Dior Medium D-lite Blue
+                                        </p>
+                                    </div>
+                                    <span class="product__price">94.000.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 24cm x R: 11cm C: 20 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-8.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Louis Vuitton</h3>
+                                        <p class="product__description">
+                                            Túi Tote Louis Vuitton Damier Graphite Tadao
+                                        </p>
+                                    </div>
+                                    <span class="product__price">32.000.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 38cm x R: 11cm C: 34 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-9.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Gucci</h3>
+                                        <p class="product__description">
+                                            Túi Xách Gucci Horsebit 1955 Leather In Black
+                                        </p>
+                                    </div>
+                                    <span class="product__price">58.200.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 25cm x R: 8cm C: 19 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-10.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Gucci</h3>
+                                        <p class="product__description">
+                                            Túi Xách Gucci 2018 Web-Accented Leather
+                                        </p>
+                                    </div>
+                                    <span class="product__price">39.700.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 36cm x R: 7cm C: 28.5 cm</span>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                <img src="./assets/img/tui-xach-img-11.jpeg" alt="" class="product__img">
+                                <div class="product__product-text">
+                                    <h3 class="product__heading">Goyard</h3>
+                                    <p class="product__description">
+                                        Túi Tote Goyard Reversible Mini Anjou With Pouch
+                                    </p>
+                                </div>
+                                <span class="product__price">54.600.000 <span>đ</span></span>
+                                <br>
+                                <span class="product__size">D: 29cm x R: 10cm C: 18 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-12.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Hermès</h3>
+                                        <p class="product__description">
+                                            Túi Xách Hermes 2020 Birkin 25 Swift Terre Battue Leather
+                                        </p>
+                                    </div>
+                                    <span class="product__price">571.900.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 25cm x R: 14cm C: 21.5 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-13.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Prada</h3>
+                                        <p class="product__description">
+                                            Balo Prada Red Tessuto Nylon Red Tessuto Nylon
+                                        </p>
+                                    </div>
+                                    <span class="product__price">23.000.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 25cm x R: 15cm C: 25 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-14.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Gucci</h3>
+                                        <p class="product__description">
+                                            Túi Xách Gucci Medium GG Psychedelic Duffle
+                                        </p>
+                                    </div>
+                                    <span class="product__price">37.500.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 38cm x R: 15cm C: 34 cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-15.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Louis Vuitton</h3>
+                                        <p class="product__description">
+                                            Túi Xách Louis Vuitton Sac Capucines PM
+                                        </p>
+                                    </div>
+                                    <span class="product__price">89.000.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 30cm x R: 11cm C: 19 cm</span>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                <img src="./assets/img/tui-xach-img-16.jpeg" alt="" class="product__img">
                                 <div class="product__product-text">
                                     <h3 class="product__heading">Dior</h3>
                                     <p class="product__description">
-                                        Túi Xách Lady Dior Medium Cannage Black Leather
+                                        Túi Xách Dior Small Bobby Black Leather
                                     </p>
                                 </div>
-                                <span class="product__price">75.300.000 <span>đ</span></span>
+                                <span class="product__price">73.600.000 <span>đ</span></span>
                                 <br>
-                                <span class="product__size">D: 23cm x R: 12cm C: 20 cm</span>
+                                <span class="product__size">D: 18cm x R: 5cm C: 14 cm</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-3.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Gucci</h3>
-                                    <p class="product__description">
-                                        Túi Xách Gucci 2018 Web-Accented Leather
-                                    </p>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-17.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Goyard</h3>
+                                        <p class="product__description">
+                                            Ví Goyard St. Louis In Brown Ví Goyard St. Louis In Brown
+                                        </p>
+                                    </div>
+                                    <span class="product__price">11.800.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 20cm x R: 1.2 cm C: 10 cm</span>
                                 </div>
-                                <span class="product__price">39.700.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 36cm x R: 7cm C: 28.5 cm</span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-4.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Louis Vuitton</h3>
-                                    <p class="product__description">
-                                        Túi Xách Louis Vuitton Sac Capucines PM
-                                    </p>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-18.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Louis Vuitton</h3>
+                                        <p class="product__description">
+                                            Balo Louis Vuitton Damier Graphite Christopher PM
+                                        </p>
+                                    </div>
+                                    <span class="product__price">62.400.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 44 cm x R: 10 cm C: 34 cm</span>
                                 </div>
-                                <span class="product__price">89.000.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 30cm x R: 11cm C: 19 cm</span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-5.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Saint Laurent</h3>
-                                    <p class="product__description">
-                                        Ví Saint Laurent Black Leather
-                                    </p>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-19.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Louis Vuitton</h3>
+                                        <p class="product__description">
+                                            Balo Louis Vuitton Damier Graphite Christopher PM
+                                        </p>
+                                    </div>
+                                    <span class="product__price">62.400.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 44cm x R: 10cm C: 34 cm</span>
                                 </div>
-                                <span class="product__price">17.700.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 19cm x R: 3cm C: 10.5 cm</span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-6.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Louis Vuitton</h3>
-                                    <p class="product__description">
-                                        Túi Xách Louis Vuitton Porte-Doccuments Voyage Epi Leather
-                                    </p>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="product__info ptb-16 border-bottom">
+                                    <img src="./assets/img/tui-xach-img-20.jpeg" alt="" class="product__img">
+                                    <div class="product__product-text">
+                                        <h3 class="product__heading">Saint Laurent</h3>
+                                        <p class="product__description">
+                                            Ví Saint Laurent Black Leather Ví Saint Laurent Black Leather
+                                        </p>
+                                    </div>
+                                    <span class="product__price">17.700.000 <span>đ</span></span>
+                                    <br>
+                                    <span class="product__size">D: 19 cm x R: 3 cm C: 1.5 cm</span>
                                 </div>
-                                <span class="product__price">26.000.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 41cm x R: 6cm C: 31 cm</span>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-7.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Prada</h3>
-                                    <p class="product__description">
-                                        Túi Xách Prada Crocodile Trimmed Saffiano Leather
-                                    </p>
-                                </div>
-                                <span class="product__price">39.700.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 37cm x R: 7cm C: 28.5 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-8.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Burberry</h3>
-                                    <p class="product__description">
-                                        Túi Xách Burberry Small TB Leather In Red
-                                    </p>
-                                </div>
-                                <span class="product__price">35.200.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 17cm x R: 6cm C: 13 cm</span>
+                            <div class="col-sm-12 mt-40">
+                                <ul class="pagination home-product">
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">
+                                            <i class="pagination-item__icon fas fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item pagination-item--active">
+                                        <a href="" class="pagination-item__link">1</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">2</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">3</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link pagination-item__link-no-pointer">...</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">79</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">
+                                            <i class="pagination-item__icon fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="row pb-60 pb-30-mobile">
-                        <div class="col-md-12 col-sm-12 text-align-center ">
-                            <a href="" class="new-arrivial__view-more">Xem Thêm</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              </div>
+          </div>
+      </div>
 
-            <section class="blog">
-                <div class="container">
-                    <div class="row mt-30">
-                        <div class="col-md-12 col-sm-12">
-                            <h2 class="blog__text">Blog</h2>
-                        </div>
-                    </div>
-                    <div class="row mb-60">
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-1.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Ngọc Thanh Tâm xả kho hàng hiệu ủng hộ quỹ Vaccine</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-2.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Loạt túi hiệu sang tay giảm giá sâu thời dịch</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-3.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Omega Speedmaster Silver Snoopy Anniversary 50 kỷ niệm các sứ mệnh Apollo</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-4.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Thương hiệu xa xỉ Louis Vuitton mang vũ trụ vào BST nữ trang siêu cao cấp “Stellar Times”</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pb-60 pb-30-mobile">
-                        <div class="col-md-12 col-sm-12 text-align-center ">
-                            <a href="" class="blog__view-more">Xem Thêm</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+      <div class="email-register">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="email-register__text">
+                          <h3 class="email-register__heading">Đăng ký nhận thông tin</h3>
+                          <p class="email-register__description">Cập nhật những thông tin mới nhất về xu hướng thời trang với Joolux. Đăng ký nhận thông tin bằng cách nhập email của bạn</p> 
+                      </div>
+                  </div>
+                  <div class="col-sm-6 email-register__form">
+                        <input type="text" placeholder="Nhập email của bạn" class="email-register__input">
+                        <button class="email-register__button">Đăng Ký</button>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
+    
 
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
                     <div class="footer__info">
                         <h3 class="footer__heading">JOOLUX.COM</h3>
                         <ul class="footer__list">
@@ -1297,7 +1786,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
                     <div class="footer__info">
                         <h3 class="footer__heading">THƯƠNG HIỆU NỔI TIẾNG</h3>
                         <ul class="footer__list">
@@ -1336,7 +1825,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile hide-on-mobile">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile hide-on-mobile">
                     <div class="footer__info">
                         <h3 class="footer__heading" style="color: transparent;">THƯƠNG HIỆU NỔI TIẾNG</h3>
                         <ul class="footer__list">
@@ -1358,7 +1847,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile hide-on-mobile hide-on-tablet">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile hide-on-mobile hide-on-tablet">
                     <div class="footer__img-info">
                         <div class="footer__img-group">
                             <img src="./assets/img/footer-img-fake.png" alt="" class="footer__img-fake">
@@ -1371,7 +1860,7 @@
                 </div>
             </div>
             <div class="row pb-20-mobile">
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
                     <div class="footer__info">
                         <h3 class="footer__heading">DỊCH VỤ CỦA JOOLUX</h3>
                         <ul class="footer__list">
@@ -1387,7 +1876,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
                     <div class="footer__info">
                         <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
                         <ul class="footer__list">
@@ -1438,7 +1927,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-6 mt-60 mt-20-mobile border-bottom-mobile">
                     <div class="footer__info">
                         <h3 class="footer__heading">LIÊN HỆ</h3>
                         <ul class="footer__list">
@@ -1487,16 +1976,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script>
-        // Slider
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 3000)
-
         // Mobile menu
         const mobileMenuIcon = document.querySelector('.js-header__navbar-menu-icon');
         const overlayMenuBar = document.querySelector('.js-menu-mobile-overlay');
@@ -1509,6 +1988,10 @@
         const mobileMenuAccessories = document.querySelector('.js-menu-mobile-item--accessories')
         const mobileMenuServices = document.querySelector('.js-menu-mobile-item--services')
 
+        // Filter Search Button
+        const filterSearchButton = document.querySelector('.js-filter-search__button');
+        const filterSearchMenuFindBtn = document.querySelector('.js-filter-search-menu__find-btn')
+        const filterSearchOverlay = document.querySelector('.js-filter-search-overlay');
         // Show and Hide Mobile Menu
         function showMobileMenu() {
             document.getElementById("js-header__navbar-mobile-menu").style.transform = 'translateX(0%)';
@@ -1574,10 +2057,24 @@
         mobileMenuAccessories.addEventListener('click',showSubMenuAccessories)
         mobileMenuServices.addEventListener('click',showSubMenuServices)
 
-    
-        const backMobileMenuItemBrand = document.querySelector('.js-dropdown-mobile-menu-back');
+        // Show and Hide Filter Search Menu
+        function showFilterSearchMenu() {
+            document.getElementById("js-filter-search-menu").style.transform = 'translateX(0)';
+            document.getElementById("js-filter-search-overlay").style.display = 'block';
+        }
 
+        function hideFilterSearchMenu() {
+            document.getElementById("js-filter-search-menu").style.transform = 'translateX(-100%)';
+            document.getElementById("js-filter-search-overlay").style.display = 'none';
+
+        }
+
+        const backMobileMenuItemBrand = document.querySelector('.js-dropdown-mobile-menu-back');
         // backMobileMenuItemBrand.addEventListener('click', console())
+
+        filterSearchButton.addEventListener('click', showFilterSearchMenu)
+        filterSearchMenuFindBtn.addEventListener('click', hideFilterSearchMenu)
+        filterSearchOverlay.addEventListener('click',hideFilterSearchMenu);
     </script>
 </body>
 </html>

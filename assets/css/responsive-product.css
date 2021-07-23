@@ -1,9 +1,18 @@
 @media (max-width: 991px) {
-    .new-arrival__menu {
+    .product__menu {
         display: none;
     }
 }
 
+@media (max-width: 768px) {
+    .product__sort-text {
+        display: none;
+    }
+
+    .product__select {
+        width: 100%;
+    }
+}
 
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
@@ -20,11 +29,7 @@
 
 /* Mobile */
 @media (max-width: 739px) {
-    .new-arrival__sort-text {
-        display: none;
-    }
-    
-    .new-arrival__select {
-        width: 100%;
+    .filter-search__button {
+        font-size: 1.3rem;
     }
 }

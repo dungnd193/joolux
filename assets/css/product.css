@@ -32,46 +32,46 @@
 }
 
 
-.new-arrival__link {
+.product__link {
     font-size: 1.2rem;
     color: #101010;
     padding: 20px 0 24px;
 }
 
-.new-arrival__link > span:nth-child(1){
+.product__link > span:nth-child(1){
     color: #878787
 }
 
-.new-arrival__link > span:nth-child(2){
+.product__link > span:nth-child(2){
     margin: 0 10px;
 }
 
-.new-arrival__header {
+.product__header {
     color: var(--black-color);
     font-size: 3rem;
     font-weight: 600;
 }
 
-.new-arrival__product-amount {
+.product__product-amount {
     font-size: 1.2rem;
     color: #101010;
 }
 
 /* ------------- END ROW ------------- */
 
-.new-arrival__sort {
+.product__sort {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.new-arrival__sort-text {
+.product__sort-text {
     font-size: 1.4rem;
     line-height: 1.4rem;
-    margin-left: 12px;
+    margin-right: 12px;
 }
 
-.new-arrival__select {
+.product__select {
     width: 192px;
     padding: 8px 40px 8px 14px;
     font-size: 1.4rem;
@@ -135,51 +135,51 @@
 }
 /* ------------- END ROW ------------- */
 
-.new-arrival__menu-item-heading {
+.product__menu-item-heading {
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-.new-arrival__menu-item-list {
+.product__menu-item-list {
     padding-left: 0;
     margin: 0;
     list-style: none;
 }
 
-.new-arrival__menu-item-item {
+.product__menu-item-item {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
 }
 
-.new-arrival__menu-item-item > input {
+.product__menu-item-item > input {
     border: 10px solid #101010;
 }
 
-.new-arrival__menu-item-option {
+.product__menu-item-option {
     color: #424242;
     font-size: 1.4rem;
     margin: 0 0 0 8px;
     line-height: 1.3rem;
 }
 
-.new-arrival__menu-item-input-group {
+.product__menu-item-input-group {
     position: relative;
 }
 
-.new-arrival__menu-item-input {
+.product__menu-item-input {
     background-color: var(--white-color);
     width: 100%;
     padding: 10px 32px;
     border: 1px solid #CFCFCF;
 }
 
-.new-arrival__menu-item-input::placeholder {
+.product__menu-item-input::placeholder {
     font-size: 1.4rem;
     color: #A1A1A1;
 }
 
-.new-arrival__menu-item-input-icon {
+.product__menu-item-input-icon {
     position: absolute;
     top: 0;
     left: 0;

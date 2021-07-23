@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 960px) and (max-width: 1023px) {
-    .new-arrival__menu {
+    .product__menu {
         display: block;
     }
 }
