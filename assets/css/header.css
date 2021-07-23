@@ -103,7 +103,8 @@
     cursor: pointer;
 }
 
-.menu-mobile-item > a > i {
+.menu-mobile-item > i {
+    font-size: 1.5rem;
     float: right;
 }
 
