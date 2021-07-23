@@ -155,6 +155,13 @@ body {
     height: 40px;
     padding: 6px 28px;
     border: 1px solid #101010;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 200ms;
+}
+
+.email-register__button:hover {
+    background-color: #585858;
+    border: 1px solid #585858;
 }
 /* Pagination */
 
