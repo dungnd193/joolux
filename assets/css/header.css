@@ -281,12 +281,13 @@
     display: none;
     position: absolute;
     width: 243px;
-    top: calc(100% + 1px);
+    top: calc(100% + 2px);
     right: -20%;
     background-color: var(--white-color);
     border-left: 1px solid #CFCFCF;
     border-bottom: 1px solid #CFCFCF;
     border-right: 1px solid #CFCFCF;
+    z-index: 1;
 }
 
 .dropdown__service-group {
