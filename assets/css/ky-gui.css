@@ -1,3 +1,5 @@
+
+/* Ky Gui Banner */
 .ky-gui__banner {
     background-image: url(../img/ky-gui-theme-1.jpeg);
     background-size: contain;
@@ -6,6 +8,8 @@
     padding-bottom: 20.8%;
 }
 
+
+/* Ky Gui Register */
 .ky-gui__register-title {
     font-size: 3rem;
     text-align: center;
@@ -175,11 +179,251 @@
 .ky-gui__register-thanks-heading {
     font-size: 2rem;
     font-weight: 600;
+    padding: 0 10px;
 }
 
 .ky-gui__register-thanks-description {
     font-size: 1.4rem;
     padding: 0 90px;
+}
+
+
+/* Ky Gui Process */
+
+.ky-gui__process {
+    background-color: rgba(208, 175, 102, 0.1);
+}
+
+.ky-gui__process-title {
+    text-align: center;
+}
+.ky-gui__process-title > h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.ky-gui__process-info {
+}
+
+.ky-gui__process-step {
+    width: 46px;
+    height: 46px;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    display: flex;
+}
+
+.ky-gui__process-step-number {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+.ky-gui__process-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ky-gui__process-list {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.ky-gui__process-item {
+    font-size: 1.4rem;
+}
+
+/* Ky Gui Reason */
+
+.ky-gui__reason-title {
+    text-align: center;
+}
+
+.ky-gui__reason-title > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.ky-gui__reason-info {
+    display: flex;
+}
+
+.ky-gui__reason-icon {
+    font-size: 3.2rem;
+    margin-right: 20px;
+}
+
+.ky-gui__reason-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.ky-gui__reason-description {
+    color: #424242;
+    font-size: 1.4rem;
+}
+
+/* Ky Gui Question */
+.ky-gui__question-title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.ky-gui__question-title > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.ky-gui__question-info {
+    border: 1px solid #E7E7E7;
+    background-color: var(--white-color);
+    margin-bottom: 24px;
+}
+
+.open-answer:checked ~ .ky-gui__question-icon::before {
+    transform: rotate(-90deg);
+}
+
+.open-answer:checked ~ .ky-gui__answer {
+    display: block;
+    transform: translateY(0);
+}
+
+.ky-gui__question-button {
+    background-color: var(--white-color);
+    border: none;
+    padding: 16px 32px;
+    width: 100%;
+}
+
+.ky-gui__question-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    float: left;
+    margin: 0;
+    padding-right: 20px;
+}
+.plus,
+.minus {
+    position: relative;
+    float: right;
+}
+
+.plus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--black-color);
+    width: 2px;
+    height: 18px;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.plus::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: var(--black-color);
+    width: 2px;
+    height: 18px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.minus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--black-color);
+    width: 2px;
+    height: 18px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transform: rotate(-90deg);
+}
+
+.minus::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: var(--black-color);
+    width: 2px;
+    height: 18px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ky-gui__answer {
+    padding: 16px 0;
+    margin: 0 32px;
+    border-top: 1px solid #E7E7E7;
+    transition: 0.5s;
+    /* transform: translateY(-10%); */
+}
+
+.ky-gui__answer-1,
+.ky-gui__answer-2,
+.ky-gui__answer-3,
+.ky-gui__answer-4,
+.ky-gui__answer-5,
+.ky-gui__answer-6 {
+    display: none;
+}
+
+.ky-gui__answer-text {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.ky-gui__answer-list {
+    padding-left: 17px;
+    margin: 0;
+}
+
+.ky-gui__answer-item{
+    font-size: 1.4rem;
+}
+
+.ky-gui__question-support {
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: var(--black-color);
+}
+
+.ky-gui__question-support-icon {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin-right: 12px;
+
+}
+
+.ky-gui__question-support-title {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+.ky-gui__question-contact {
+    background-color: #F4F4F4;
+    padding: 24px 40px;
+}
+
+.ky-gui__question-contact-text {
+    color: var(--black-color);
+    font-size: 1.4rem;
 }
 
 @media (max-width: 992px) {
@@ -191,9 +435,21 @@
 
 /* Responsive Mobile */
 @media (max-width: 767px) {
-    .ky-gui__register-order {
+    .ky-gui__register-order,
+    .ky-gui__register-order-checked--first, 
+    .ky-gui__register-order-checked--second, 
+    .ky-gui__register-order-checked--third {
         width: 40px;
         height: 40px;
+    }
+
+    .ky-gui__register-order-checked--first::after, 
+    .ky-gui__register-order-checked--second::after, 
+    .ky-gui__register-order-checked--third::after {
+        top: 10px;
+        left: 17px;
+        width: 8px;
+        height: 16px;
     }
 
     .ky-gui__register-header-title {
@@ -205,5 +461,18 @@
         padding: 8px 12px;
     }
 
+    .ky-gui__register-line::after {
+        height: calc(100% - 90px);
+    }
+    
+    .ky-gui__register-thanks-description {
+        padding: 0px 8px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ky-gui__register-thanks-description {
+        padding: 0px 40px;
+    }
 }
 

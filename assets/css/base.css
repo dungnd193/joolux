@@ -20,6 +20,10 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+label {
+    margin: 0;
+}
+
 /* a:hover {
     color: currentColor;
     text-decoration: none;
@@ -98,6 +102,10 @@ body {
 
 .mb-24 {
     margin-bottom: 24px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 .mb-40 {
