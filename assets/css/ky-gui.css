@@ -1,0 +1,209 @@
+.ky-gui__banner {
+    background-image: url(../img/ky-gui-theme-1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 20.8%;
+}
+
+.ky-gui__register-title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ky-gui__register-line,
+.ky-gui__register-line--checked-first-step,
+.ky-gui__register-line--checked-second-step {
+    position: relative;
+}
+
+.ky-gui__register-line--checked-first-step,
+.ky-gui__register-line--checked-second-step {
+    display: none;
+}
+
+.ky-gui__register-line::after {
+    content: "";
+    position: absolute;
+    top: calc(0% + 52px + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+    width: 2px;
+    height: calc(100% - 80px);
+    background-color: #E7E7E7;
+}
+
+.ky-gui__register-line--checked-first-step::after,
+.ky-gui__register-line--checked-second-step::after {
+    content: "";
+    position: absolute;
+    top: calc(0% + 52px + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+    width: 2px;
+    height: calc(100% - 80px);
+    background-color: var(--black-color);
+    z-index: 1;
+}
+
+.ky-gui__register-order {
+    width: 52px;
+    height: 52px;
+    background-color: var(--black-color);
+    display: flex;
+    border-radius: 50%;
+}
+
+.ky-gui__register-order-number {
+    color: var(--white-color);
+    font-size: 2.4rem;
+    margin: auto;
+    position: relative;
+}
+
+.ky-gui__register-order-checked--first,
+.ky-gui__register-order-checked--second,
+.ky-gui__register-order-checked--third {
+    width: 52px;
+    height: 52px;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: none;
+}
+
+.ky-gui__register-order-checked--first::after,
+.ky-gui__register-order-checked--second::after,
+.ky-gui__register-order-checked--third::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 22px;
+    width: 10px;
+    height: 20px;
+    border: solid #D1AF66;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ky-gui__register-header-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 14px 0 24px;
+}
+
+.ky-gui__register-form--second,
+.ky-gui__register-form--third {
+    display: none;
+}
+
+.ky-gui__register-heading {
+    color: #101010;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.ky-gui__register-input {
+    width: 100%;
+    border: 1px solid #CFCFCF;
+    padding: 10px 14px;
+    outline: none;
+}
+
+.ky-gui__register-input:focus {
+    border: 1px solid #101010;
+}
+
+.ky-gui__register-input::placeholder {
+    font-size: 1.4rem;
+}
+
+.ky-gui__register-button--continue {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    border: none;
+}
+
+.ky-gui__register-button--back {
+    color: #424242;
+    background-color: #F4F4F4;
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    border: none;
+}
+
+.ky-gui__register .radio-button {
+    top: 3px;
+}
+
+.ky-gui__register .checkmark {
+    top: 2.5%;
+    transform: translateY(0);
+}
+
+.ky-gui__register .product__menu-item-option {
+    line-height: 1.8rem;
+}
+
+.ky-gui__register .product__menu-item-option > a {
+    color: #D1AF66;
+}
+
+.ky-gui__register-thanks {
+    text-align: center;
+    background-color: #F4F4F4;
+    padding: 32px 0 40px;
+    margin: 48px 0;
+    display: none;
+}
+
+.ky-gui__register-thanks-icon > i {
+    color: #28AF47;
+    font-size: 6rem;
+    margin-bottom: 24px;
+}
+
+.ky-gui__register-thanks-heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.ky-gui__register-thanks-description {
+    font-size: 1.4rem;
+    padding: 0 90px;
+}
+
+@media (max-width: 992px) {
+    .col-1 {
+        max-width: unset;
+    }
+}
+
+
+/* Responsive Mobile */
+@media (max-width: 767px) {
+    .ky-gui__register-order {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ky-gui__register-header-title {
+        margin: 6px 0 24px;
+    }
+
+    .ky-gui__register-button--continue,
+    .ky-gui__register-button--back {
+        padding: 8px 12px;
+    }
+
+}
+

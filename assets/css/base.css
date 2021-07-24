@@ -88,8 +88,20 @@ body {
     margin-bottom: 8px;
 }
 
+.mb-12 {
+    margin-bottom: 12px;
+}
+
 .mb-16 {
     margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }
 
 .mb-50 {
@@ -106,6 +118,10 @@ body {
 
 .pb-30 {
     padding-bottom: 30px
+}
+
+.pb-40 {
+    padding-bottom: 40px;
 }
 
 .pb-60 {
