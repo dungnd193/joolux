@@ -200,12 +200,12 @@
 }
 
 .header__category-right-item {
-    padding: 16px 0;
+    padding: 16px 4px;
 
 }
 
 .header__category-right-item:first-child {
-    margin-right: 22px;
+    margin-right: 18px;
 }
 
 .header__category-left-item > a,
@@ -272,6 +272,10 @@
 
 .header__category-right-item {
     position: relative;
+}
+
+.header__category-right-item:hover {
+    border-bottom: 1px solid #101010;
 }
 
 .header__category-right-item:hover .header__category-right-dropdown{
