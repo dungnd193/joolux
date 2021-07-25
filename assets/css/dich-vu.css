@@ -1,0 +1,45 @@
+.service__title {
+    text-align: center;
+}
+
+.service__title > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.service__link {
+    display: block;
+}
+
+.service__link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.service__option {
+    /* display: block; */
+    border: 1px solid #CFCFCF;
+}
+
+.service__option-img {
+    width: 100%;
+}
+
+.service__option-text {
+    padding: 16px;
+}
+
+.service__option-heading {
+    color: var(--black-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.service__option-direct {
+    color: #424242;
+    font-size: 1.4rem;
+}
+
+.service__option-direct:hover {
+    color: currentColor;
+}

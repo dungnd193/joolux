@@ -329,6 +329,10 @@
     cursor: default;
 }
 
+.upcoming:hover {
+    text-decoration: none;
+}
+
 .header__mobile-search {
     background-color: var(--black-color);
     width: 100%;

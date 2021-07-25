@@ -373,6 +373,8 @@
     margin: 0 32px;
     border-top: 1px solid #E7E7E7;
     transition: 0.5s;
+    transition-property: all;
+    transition-duration: 200ms;
     /* transform: translateY(-10%); */
 }
 

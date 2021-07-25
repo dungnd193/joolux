@@ -9,8 +9,9 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/slider.css">
-    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/kdhh.css">
+    <link rel="stylesheet" href="./assets/css/ky-gui.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
@@ -872,405 +873,615 @@
     <div class="menu-mobile-overlay js-menu-mobile-overlay" id="js-menu-mobile-overlay"></div>
   
     <div class="content">
-            <!-- Image Slider Start -->
-            <section class="slider">
-                <!-- radio button start -->
-                <input type="radio" hidden name="radio-btn" id="radio1">
-                <input type="radio" hidden name="radio-btn" id="radio2">
-                <input type="radio" hidden name="radio-btn" id="radio3">
-                <input type="radio" hidden name="radio-btn" id="radio4">
-                <!-- radio button end -->
-        
-                <div class="slides">
-                    <!-- Slider image start -->
-                    <div class="slide first">
-                        <img src="./assets/img/slide-1.jpeg" alt="">
+        <section class="kdhh__banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 kdhh__banner-detail">
+                        <h2 class="kdhh__title">Giải pháp kiểm định hàng hiệu</h2>
+                        <img src="./assets/img/kiem-dinh-hang-hieu-banner.jpeg" alt="" class="kdhh__img">
                     </div>
-                    <div class="slide">
-                        <img src="./assets/img/slide-2.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/slide-3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/slide-4.jpg" alt="">
-                    </div>
-                    <!-- Slider image end -->
                 </div>
-                <!-- Automatic navigation start -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <!-- Automatic navigation end -->
-                <!-- manual navigation start -->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-                <!-- manual navigation end -->
-            </section>
-            <!-- Image Slider End -->
+            </div>
+        </section>
 
-            <section class="card">
-                <div class="container">
+        <section class="kdhh__content">
+            <div class="container">
+                <div class="row mb-30">
+                    <div class="kdhh__content-group">
+                        <div class="col-sm-12">
+                            <ul class="kdhh__content-list">
+                                <li class="kdhh__content-item kdhh__content-item-checked" id="dvkd">Dịch vụ kiểm định</li>
+                                <li class="kdhh__content-item" id="cne">Công nghệ Entrupy</li>
+                                <li class="kdhh__content-item" id="quest">Câu hỏi thường gặp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kdhh__dvkd" id="kdhh__dvkd">
+                    <div class="row border-bottom">
+                        <h3 class="col-lg-12 kdhh__dvkd-title">Đăng Ký Dịch Vụ Kiểm Định</h3>
+                        <h4 class="col-lg-4 kdhh__dvkd-text">Thông tin người đăng ký kiểm định</h4>
+                        <div class="col-lg-4">
+                            <h4 class="kdhh__dvkd-heading">Họ và tên *</h4>
+                            <input type="text" placeholder="Nhập họ và tên đầy đủ" class="kdhh__dvkd-input">
+                            <h4 class="kdhh__dvkd-heading">Số điện thoại *</h4>
+                            <input type="text" placeholder="Số điện thoại để nhận hàng" class="kdhh__dvkd-input">
+                        </div>
+                        <div class="col-lg-4">
+                            <h4 class="kdhh__dvkd-heading">Địa chỉ email *</h4>
+                            <input type="text" placeholder="Địa chỉ email để xác nhận đơn hàng" class="kdhh__dvkd-input">
+                            <h4 class="kdhh__dvkd-heading">Địa chỉ *</h4>
+                            <input type="text" placeholder="Vui lòng ghi cụ thể địa chỉ toà nhà..." class="kdhh__dvkd-input">
+                        </div>
+                    </div>
+                    <div class="row border-bottom  mt-30 pb-30">
+                        <h4 class="col-lg-4 kdhh__dvkd-text">Thông tin sản phẩm kiểm định</h4>
+                        <div class="col-lg-8">
+                            <h4 class="kdhh__dvkd-heading">Thương hiệu túi xách *</h4>
+                            <input type="text" placeholder="Chọn thương hiệu túi xách" class="kdhh__dvkd-input">
+                            <h4 class="kdhh__dvkd-heading">Phương thức gửi kiểm định</h4>
+                            <div class="row">
+                                <div class="col-lg-12 mb-8">
+                                    <label class="product__menu-item-option">
+                                        Joolux trực tiếp đến kiểm định tại nhà
+                                        <input type="radio" hidden>
+                                        <span class="radio-button"></span>
+                                    </label>
+                                </div>
+                                <div class="col-lg-12 mb-8">
+                                    <label class="product__menu-item-option">
+                                        Joolux trực tiếp đến lấy sản phẩm tại nhà
+                                        <input type="radio" hidden>
+                                        <span class="radio-button"></span>
+                                    </label>
+                                </div>
+                                <div class="col-lg-12 mb-8">
+                                    <label class="product__menu-item-option">
+                                        Bạn mang sản phẩm đến các điểm nhận hàng của Joolux
+                                        <input type="radio" hidden>
+                                        <span class="radio-button"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="kdhh__dvkd-heading">Chọn ngày hẹn *</h4>
+                                    <input type="text" placeholder="Nhập họ và tên đầy đủ" class="kdhh__dvkd-input">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4 class="kdhh__dvkd-heading">Chọn giờ hẹn *</h4>
+                                    <input type="text" placeholder="Nhập họ và tên đầy đủ" class="kdhh__dvkd-input">
+                                </div>
+                                <div class="col-lg-12">
+                                    <button class="kdhh__dvkd-button">Đăng Ký Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-md-4 mt-50">
-                            <div class="card__info">
-                                <div class="card__icon">
-                                    <i class="fas fa-shield-alt"></i>
+                        <div class="col-lg-12 kdhh__price">
+                            <h2 class="kdhh__price-title">Biểu Phí Kiểm Định</h2>
+                            <span class="kdhh__price-text">Biểu phí được cập nhật mới nhất 18/02/2020</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 mt-40">
+                            <div class="kdhh__price-info">
+                                <div class="kdhh__price-brand">
+                                    <span class="kdhh__price-brand-name">HERMÈS</span>
                                 </div>
-                                <div class="card__text">
-                                    <h3 class="card__heading">Hàng Chính Hãng</h3>
-                                    <p class="card__description">
-                                        Tất cả các sản phẩm trên Joolux đều được qua quy trình kiểm định bằng công nghệ và đội ngũ chuyên gia để đảm bảo chính hãng 100% đến tay khách hàng.
-                                    </p>
-                                    <a href="" class="card__direct">Cam kết từ Joolux</a>
+                                <div class="kdhh__price-content">
+                                    <h3 class="kdhh__price-heading">PHÍ KIỂM ĐỊNH</h3>
+                                    <h4 class="kdhh__price-percent">3%</h4>
+                                    <span class="kdhh__price-text">Giá trị sản phẩm</span>
+                                    <br>
+                                    <span class="kdhh__price-minium">(Tối thiểu 3.500.000 ₫)</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mt-50">
-                            <div class="card__info">
-                                <div class="card__icon">
-                                    <i class="fas fa-tag"></i>
+                        <div class="col-xl-4 col-md-6 mt-40">
+                            <div class="kdhh__price-info">
+                                <div class="kdhh__price-brand">
+                                    <span class="kdhh__price-brand-name">CHANEL | DIOR</span>
                                 </div>
-                                <div class="card__text">
-                                    <h3 class="card__heading">Giá Tốt Nhất</h3>
-                                    <p class="card__description">
-                                        Chúng tôi luôn nỗ lực để mang đến cho khách hàng những sản phẩm chất lượng nhất với giá tốt nhất trên thị trường.
-                                    </p>
-                                    <a href="" class="card__direct">Xem sản phẩm</a>
+                                <div class="kdhh__price-content">
+                                    <h3 class="kdhh__price-heading">PHÍ KIỂM ĐỊNH</h3>
+                                    <h4 class="kdhh__price-percent">5%</h4>
+                                    <span class="kdhh__price-text">Giá trị sản phẩm</span>
+                                    <br>
+                                    <span class="kdhh__price-minium">(Tối thiểu 1.500.000 ₫)</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mt-50">
-                            <div class="card__info">
-                                <div class="card__icon">
-                                    <i class="fas fa-layer-group"></i>
+                        <div class="col-xl-4 col-md-6 offset-md-3 mt-40">
+                            <div class="kdhh__price-info">
+                                <div class="kdhh__price-brand">
+                                    <span class="kdhh__price-brand-name">CÁC THƯƠNG HIỆU KHÁC</span>
                                 </div>
-                                <div class="card__text">
-                                    <h3 class="card__heading">Đa Dạng Dịch Vụ</h3>
-                                    <p class="card__description">
-                                        Joolux mong muốn mang đến cho khách hàng một trải nghiệm trọn vẹn thông qua các dịch vụ đa dạng: ký gửi, kiểm định, spa - chế tác và cho thuê hàng hiệu.
-                                    </p>
-                                    <a href="" class="card__direct">Dịch vụ của chúng tôi</a>
+                                <div class="kdhh__price-content">
+                                    <h3 class="kdhh__price-heading">PHÍ KIỂM ĐỊNH</h3>
+                                    <h4 class="kdhh__price-percent">8%</h4>
+                                    <span class="kdhh__price-text">Giá trị sản phẩm</span>
+                                    <br>
+                                    <span class="kdhh__price-minium">(Tối thiểu 800.000 ₫)</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-30 pb-30 border-bottom">
+                        <div class="col-12">
+                            <ul class="kdhh__price-list-text">
+                                <li>◦ Chi phí kiểm định được tính dựa trên giá thành sản phẩm</li>
+                                <li>◦ Joolux LCC <strong>bảo hiểm 100%</strong> trên giá trị sản phẩm</li>
+                                <li>
+                                    ◦ Quý khách có nhu cầu kiểm định số lượng nhiều, vui lòng liên hệ 
+                                    CSKH Joolux LCC<!-- --> <a href="" style="color: #D1AF66;">1900 292984</a> <!-- -->để được hỗ trợ tốt nhất.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="kdhh__about">
+                        <div class="row">
+                            <div class="col-12 kdhh__about-title">
+                                <h2 class="">Về Joolux LCC</h2>
+                            </div>
+                        </div>
+                        <div class="row pb-30 border-bottom">
+                            <div class="col-sm-7">
+                                <div class="kdhh__about-description">
+                                    <p class="kdhh__about-paragraph">
+                                        ◦ Trực thuộc <strong>Joolux.com</strong> – Nền tảng TMĐT và cộng đồng giao dịch hàng hiệu 
+                                        hàng đầu Việt Nam, <strong>JOOLUX Luxury Certification Center (JOOLUX LCC)</strong> được 
+                                        thành lập với sứ mệnh bảo đảm quyền lợi của khách hàng về chất lượng và 
+                                        tính chính hãng của các sản phẩm hàng hiệu giá trị cao.
+                                    </p>
+                                    <p class="kdhh__about-paragraph">
+                                        ◦ JOOLUX LCC là đơn vị đầu tiên đưa công nghệ kiểm định Entrupy về Việt 
+                                        Nam. Đây là công nghệ kiểm định hàng hiệu số 1 thế giới đến từ Mỹ, tích 
+                                        hợp kính hiển vi có thể phóng to bề mặt được quét (chất liệu da bên trong 
+                                        - bên ngoài, đường chỉ, logo, khóa kim loại) lên đến <strong>400 lần</strong>, sau đó công 
+                                        nghệ trí tuệ nhân tạo (AI) tự động phân và đối chiếu hình ảnh quét được 
+                                        với cơ sở dữ liệu lên đến 50 triệu hình ảnh sản phẩm chính hãng của gần <strong>20 
+                                        thương hiệu</strong> nổi tiếng nhất, mang đến kết quả kiểm định tính chính hãng của 
+                                        sản phẩm với xác suất chính xác đến <strong>99%</strong> trong một khoảng thời gian nhanh chóng.
+                                    </p>
+                                    <p class="kdhh__about-paragraph">
+                                        ◦ Với sự kết hợp từ các chuyên gia giàu kinh nghiệm cùng ứng dụng công nghệ 
+                                        hiện đại nhất, JOOLUX LCC chính là giải pháp hoàn thiện nhất để khẳng định 
+                                        tính chính hãng của sản phẩm hàng hiệu, tăng mức độ uy tín và hạn chế rủi ro, 
+                                        tranh chấp khi giao dịch sản phẩm hàng hiệu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <img src="./assets/img/kiem-dinh-hang-hieu-about-img.jpeg" alt="" class="kdhh__about-img">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="kdhh__certificate">
+                        <div class="row">
+                            <div class="col-12 kdhh__certificate-title">
+                                <h2 >Thẻ Chứng Nhận Chính Hãng Từ Joolux LCC</h2>
+                                <p>
+                                    Sau mỗi quá trình kiểm định sử dụng công nghệ Entrupy, sản phẩm hàng hiệu nếu đạt chuẩn chính hãng sẽ được cấp <strong>Thẻ Chứng Nhận Chính Hãng</strong> đi kèm, bảo hiểm 100% kết quả và có giá trị trên toàn thế giới.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mb-60">
+                            <div class="col-lg-3">
+                                <p class="kdhh__certificate-paragraph">
+                                    <strong>Thẻ chứng nhận chính hãng</strong>
+                                    <br>
+                                    <br>
+                                    ◦ Thẻ Chứng Nhận Chính Hãng của Joolux LCC là sự bảo chứng tối ưu 
+                                    cho sự an tâm và uy tín trong giao dịch mua – bán hàng hiệu trực 
+                                    tuyến: người bán có thể tự tin về giá trị và người mua có thể tự 
+                                    tin về chất lượng của sản phẩm đang được giao dịch.
+                                    <br>
+                                    <br>
+                                    ◦ Trong trường hợp Thẻ bị thất lạc, Trung Tâm Kiểm Định Hàng Hiệu 
+                                    Joolux LCC có thể hỗ trợ cấp lại thẻ dựa trên cơ sở dữ liệu lưu sẵn 
+                                    từ hệ thống.
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <img class="kdhh__certificate-img" src="./assets/img/kdhh-certificate-img-1.jpeg" alt="">
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <img class="kdhh__certificate-img" src="./assets/img/kdhh-certificate-img-2.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </section>
 
-            <section class="category-card">
-                <div class="container border-bottom">
-                    <div class="row pb-60 pb-40-mobile">
-                        <div class="col-md-6 mt-50">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-1.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Ưu Đãi Tiền Triệu</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
+                <div class="kdhh__technology" id="kdhh__technology">
+                    <div class="row">
+                        <div class="col-12 kdhh__technology-header">
+                            <h2 class="kdhh__technology-title">Công Nghệ Entrupy</h2>
+                            <a href="" class="kdhh__technology-website">www.entrupy.com</a>
+                        </div>
+                    </div>
+                    <div class="row pb-60 border-bottom">
+                        <div class="col-md-6">
+                            <p class="kdhh__technology-description">
+                                ◦ <strong>Entrupy</strong> là một công nghệ ứng dụng trí tuệ nhân tạo (AI) để kiểm định 
+                                tính chính hãng của sản phẩm hàng hiệu, được phát triển tại New York, USA.
+                                <br>
+                                <br>
+                                ◦ Công nghệ Entrupy gồm một thiết bị scan được trang bị kính hiển vi siêu nhỏ, khi 
+                                quét lên các bề mặt có thể phóng to điểm ảnh lên đến 400 lần, soi rõ những chi tiết 
+                                mà mắt thường không thể nhìn thấy được, sau đó trí tuệ AI sẽ dựa vào các thuật toán 
+                                tự động đối chiếu những hình ảnh vừa chụp được với cơ sở dữ liệu lưu sẵn gồm 50 triệu 
+                                hình ảnh của các sản phẩm chính hãng trên khắp thế giới, phân tích các điểm giống và 
+                                khác nhau, từ đó đưa ra kết quả xác thực sản phẩm đó là chính hãng hay không chuẩn 
+                                chính hãng chỉ trong một thời gian ngắn.
+                                <br>
+                                <br>
+                                <strong>Hình ảnh microscopic của 4 phần chính khi scan 1 chiếc túi</strong>
+                            </p>
+                            <div class="row">
+                                <div class="col-6 mb-16">
+                                    <img class="kdhh__technology-img" src="./assets/img/kdhh-technology-img-1.jpeg" alt="">
+                                    <span class="kdhh__technology-img-text">1. The leather logo</span>
+                                </div>
+                                <div class="col-6 mb-16">
+                                    <img class="kdhh__technology-img" src="./assets/img/kdhh-technology-img-2.jpeg" alt="">
+                                    <span class="kdhh__technology-img-text">2. The hardware logo</span>
+                                </div>
+                                <div class="col-6 mb-16">
+                                    <img class="kdhh__technology-img" src="./assets/img/kdhh-technology-img-3.jpeg" alt="">
+                                    <span class="kdhh__technology-img-text">3. The inner fabric</span>
+                                </div>
+                                <div class="col-6 mb-16">
+                                    <img class="kdhh__technology-img" src="./assets/img/kdhh-technology-img-4.jpeg" alt="">
+                                    <span class="kdhh__technology-img-text">4. The outer material</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-2.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Christian Dior</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
+                        <div class="col-md-6">
+                            <img class="kdhh__technology-description-img" src="./assets/img/kdhh-technology-description-img.jpeg" alt="">
+                            <p class="kdhh__technology-description">
+                                ◦ Tỉ lệ chính xác của kết quả mà Entrupy đưa ra đạt đến 99.1%. 
+                                Cứ mỗi sản phẩm được xác nhận chính hãng sẽ giúp trí tuệ AI “học” 
+                                và thu nhận thêm cơ sở dữ liệu mới, tăng khả năng chính xác và 
+                                thời gian kiểm định nhanh chóng, trở thành công cụ uy tín, tiên 
+                                tiến nhất giúp hỗ trợ người dùng hàng hiệu và thay đổi thế giới hàng 
+                                hiệu theo chiều hướng tích cực hơn.
+                                <br>
+                                <br>
+                                ◦ Với mỗi hình ảnh mà cơ sở dữ liệu thu nhận được, Entrupy sẽ sử dụng 
+                                thuật toán của trí tuệ nhân tạo AI. Điều đó chứng minh những hình ảnh 
+                                thu nhận được luôn có chất lượng thông tin rất cao và có thể điều chỉnh 
+                                hoàn thiện hơn trong suốt quá trình đào tạo trí tuệ nhân tạo.
+                            </p>
                         </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-3.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Túi Hiệu Công Sở</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 kdhh__technology-header">
+                            <h2 class="kdhh__technology-title" style="margin: 30px 0;">15 Thương Hiệu Hàng Hiệu Được Hỗ Trợ Kiểm Định Bởi Entrupy</h2>
                         </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-4.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Túi Hiệu Dạo Phố</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
+                    </div>
+                    <div class="row pb-60">
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-1.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">BALENCIAGA</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-5.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Giai điệu ngày hè</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-2.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">BOTTEGA VENETA</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 mt-50 mt-20-mobile">
-                            <div class="category-card__info">
-                                <img src="./assets/img/card-category-img-6.jpeg" alt="" class="category-card__img">
-                                <div class="category-card__text">
-                                    <h3 class="category-card__heading">Ví hiệu thời trang</h3>
-                                    <a href="" class="category-card__direct">Mua Ngay</a>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-3.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">BURBERRY</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-4.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">CELINE</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-5.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">CHANEL</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-6.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">CHLOÉ</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-7.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">COACH</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-8.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">DIOR</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-9.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">FENDI</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-10.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">GOYARD</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-11.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">GUCCI</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-12.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">HERMÈS</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 offset-md-1dot5 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-13.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">LOUIS VUITTON</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-14.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">PRADA</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2dot4 col-md-3 col-sm-4 col-6 offset-3 mt-30">
+                            <a href="">
+                                <div class="kdhh__technology-brand">
+                                    <img src="./assets/img/kdhh-technology-brand-15.jpeg" alt="" class="kdhh__technology-brand-img">
+                                    <div class="kdhh__technology-brand-group">
+                                        <h3 class="kdhh__technology-brand-name">SAINT LAURENT</h3>
+                                        <a href="" class="kdhh__technology-brand-direct">Xem chất liệu</a>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="commitment">
-                <div class="container border-bottom">
-                    <div class="row pb-60 pb-30-mobile">
-                        <div class="col-lg-3 col-md-12 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <h2 class="commitment__text-heading">Joolux cam kết luôn hỗ trợ bạn</h2>
+                <div class="ky-gui__question" id="ky-gui__question">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 ky-gui__question-title">
+                                <h2>Câu Hỏi Thường Gặp</h2>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <div class="commitment__icon">
-                                    <i class="fas fa-truck-moving"></i>
+                        <div class="row pb-30">
+                            <div class="col-md-8">
+                                <div class="ky-gui__question-info">
+                                    <button for="open-answer" class="ky-gui__question-button js-ky-gui__question-button-1">
+                                        <h3 class="ky-gui__question-text">Joolux chấp nhận những sản phẩm ở tình trạng nào?</h3>
+                                        <span class="plus" id='ky-gui__question-icon-1'></span>
+                                    </button>
+                                    <div class="closed" id="ky-gui__answer-1">
+                                        <h4 class="ky-gui__answer-text">Có 4 tình trạng sản phẩm được Joolux chấp nhận nhận ký gửi:</h4>
+                                        <ul class="ky-gui__answer-list">
+                                            <li class="ky-gui__answer-item"><strong>Perfect:</strong> Chưa qua sử dụng, full box</li>
+                                            <li class="ky-gui__answer-item"><strong>Excellent:</strong> Không có dấu hiệu hư tổn hoặc có dấu hiệu hư tổn không thấy rõ</li>
+                                            <li class="ky-gui__answer-item"><strong>Very Good:</strong> Có dấu hiệu hư tổn không đáng kể do quá trình sử dụng</li>
+                                            <li class="ky-gui__answer-item"><strong>Good:</strong> Có dấu hiệu hư tổn thấy rõ do quá trình sử dụng</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="commitment__text">
-                                    <h3 class="commitment__heading">
-                                        Miễn Phí Vận Chuyển
-                                    </h3>
-                                    <p class="commitment__description">
-                                        Tất cả các sản phẩm giao dịch qua Joolux đều được miễn phí vận chuyển đến tay khách hàng tại các thành phố lớn.
-                                    </p>
-                                    <a href="" class="commitment__direct">Chính sách vận chuyển</a>
+                                <div class="ky-gui__question-info">
+                                    <button for="open-answer" class="ky-gui__question-button js-ky-gui__question-button-2">
+                                        <h3 class="ky-gui__question-text">Nếu ở những tỉnh thành khác thì vận chuyển hàng cho Joolux bằng cách nào?</h3>
+                                        <span class="plus" id='ky-gui__question-icon-2'></span>
+                                    </button>
+                                    <div class="closed" id="ky-gui__answer-2">
+                                        <h4 class="ky-gui__answer-text">Khách hàng gửi sản phẩm ký gửi qua các đơn vị vận chuyển có tại tỉnh thành qua 1 trong 2 địa chỉ trụ sở của Joolux:</h4>
+                                        <ul class="ky-gui__answer-list">
+                                            <li class="ky-gui__answer-item">Người nhận: <strong>CỘNG ĐỒNG MUA - BÁN & KÝ GỬI HÀNG HIỆU JOOLUX.COM</strong></li>
+                                            <li class="ky-gui__answer-item">Hotline: <a href="" style="color: #D1AF66; font-weight: 700;">1900 292984</a></li>
+                                            <li class="ky-gui__answer-item">
+                                                Địa chỉ
+                                                <ul class="ky-gui__answer-list">
+                                                    <li class="ky-gui__answer-item"><strong>Hồ Chí Minh: </strong>46 Nguyễn Thị Minh Khai, Phường Đakao, Quận 1, Tp. Hồ Chí Minh</li>
+                                                    <li class="ky-gui__answer-item"><strong>Hà Nội: </strong>Y-Nest tầng 4 toà nhà Hoà Bình Green, 505 Minh Khai, Phường Vĩnh Phú, Quận Hai Bà Trưng, Hà Nội</li>
+                                                </ul>
+                                            </li>
+                                            <li class="ky-gui__answer-item">Nội dung: <strong>Mã khách hàng ký gửi - Điện thoại</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ky-gui__question-info">
+                                    <button for="open-answer" class="ky-gui__question-button js-ky-gui__question-button-3">
+                                        <h3 class="ky-gui__question-text">Làm thế nào để định giá được sản phẩm?</h3>
+                                        <span class="plus" id='ky-gui__question-icon-3'></span>
+                                    </button>
+                                    <div class="closed" id="ky-gui__answer-3">
+                                        <h4 class="ky-gui__answer-text">Joolux hỗ trợ tư vấn khách hàng định giá sản phẩm dựa vào tình trạng sản phẩm, loại sản phẩm, thương hiệu sản phẩm ký gửi cùng với mặt bằng chung của thị trường hiện tại để đưa ra giá bán phù hợp nhất.:</h4>
+                                        <ul class="ky-gui__answer-list">
+                                            <li class="ky-gui__answer-item"><strong>Perfect:</strong> Chưa qua sử dụng, full box</li>
+                                            <li class="ky-gui__answer-item"><strong>Excellent:</strong> Không có dấu hiệu hư tổn hoặc có dấu hiệu hư tổn không thấy rõ</li>
+                                            <li class="ky-gui__answer-item"><strong>Very Good:</strong> Có dấu hiệu hư tổn không đáng kể do quá trình sử dụng</li>
+                                            <li class="ky-gui__answer-item"><strong>Good:</strong> Có dấu hiệu hư tổn thấy rõ do quá trình sử dụng</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ky-gui__question-info">
+                                    <button for="open-answer" class="ky-gui__question-button js-ky-gui__question-button-4">
+                                        <h3 class="ky-gui__question-text">Phí dịch vụ kí gửi sản phẩm trên Joolux?</h3>
+                                        <span class="plus" id='ky-gui__question-icon-4'></span>
+                                    </button>
+                                    <div class="closed" id="ky-gui__answer-4">
+                                        <h4 class="ky-gui__answer-text" style="font-style: italic; font-weight: 700;">* Phí dịch vụ ký gửi sản phẩm trên Joolux.com tính trên giao dịch thành công</h4>
+                                        <ul class="ky-gui__answer-list">
+                                            <img src="./assets/img/phi-ky-gui.png" alt="" style="width: 100%;">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ky-gui__question-info">
+                                    <button for="open-answer" class="ky-gui__question-button js-ky-gui__question-button-5">
+                                        <h3 class="ky-gui__question-text">Khi đơn hàng thành công Joolux thanh toán như thế nào?</h3>
+                                        <span class="plus" id='ky-gui__question-icon-5'></span>
+                                    </button>
+                                    <div class="closed" id="ky-gui__answer-5">
+                                        <h4 class="ky-gui__answer-text">Sau khi khách hàng nhận sản phẩm và không có bất kì phản hồi nào về sản phẩm nhận được. Trong vòng 3 ngày làm việc Joolux sẽ thanh toán cho nhà bán hàng qua tài khoản ngân hàng bằng giá bán sản phẩm đã trừ phí dịch vụ ký gửi tại Joolux.</h4>
+                                    </div>
+                                </div>
+                                <div class="ky-gui__question-info">
+                                    <button for="open-answer" class="ky-gui__question-button js-ky-gui__question-button-6">
+                                        <h3 class="ky-gui__question-text">Thời gian giữ hàng tại Joolux</h3>
+                                        <span class="plus" id='ky-gui__question-icon-6'></span>
+                                    </button>
+                                    <div class="closed" id="ky-gui__answer-6">
+                                        <h4 class="ky-gui__answer-text">Joolux sẽ giữ sản phẩm ký gửi tại kho trong vòng 90 ngày, kể từ ngày Joolux nhận sản phẩm.
+                                            <br>
+                                            Sau 90 ngày, nếu chưa có đơn hàng, quý khách có thể gia hạn thêm thời hạn ký gửi tại Joolux hoặc lấy sản phẩm lại.</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <div class="commitment__icon">
-                                    <i class="fas fa-retweet"></i>
+                            <div class="col-md-4">
+                                <div class="ky-gui__question-support">
+                                    <i class="ky-gui__question-support-icon fas fa-phone-alt"></i>
+                                    <h3 class="ky-gui__question-support-title">Cần hỗ trợ</h3>
                                 </div>
-                                <div class="commitment__text">
-                                    <h3 class="commitment__heading">
-                                        Đổi Trả Linh Hoạt
-                                    </h3>
-                                    <p class="commitment__description">
-                                        Cam kết đổi trả 100% với sản phẩm bị lỗi trong quá trình vận chuyển hoặc không đúng với mô tả trên website.
-                                    </p>
-                                    <a href="" class="commitment__direct">Chính sách đổi trả</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 mt-60 mt-40-mobile">
-                            <div class="commitment__info">
-                                <div class="commitment__icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="commitment__text">
-                                    <h3 class="commitment__heading">
-                                        Hỗ Trợ Nhanh Chóng
-                                    </h3>
-                                    <p class="commitment__description">
-                                        Chúng tôi luôn sẵn sàng hỗ trợ giải đáp nhanh chóng để mang đến sự hài lòng cho khách hàng.
-                                    </p>
-                                    <a href="" class="commitment__direct">Hotline: 1900 292984</a>
+                                <div class="ky-gui__question-contact">
+                                    <span class="ky-gui__question-contact-text">
+                                        <strong>Vui lòng liên hệ ngay</strong> 
+                                        <br>
+                                        HOTLINE: <a href="" style="color: #D1AF66;">1900 292984</a>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <strong>Thời gian liên hệ:</strong> 
+                                        <br>
+                                        ◦ Thứ hai - Thứ sáu: 8h30 - 18h
+                                        <br>
+                                        ◦ Thứ bảy: 8h30 - 12h (Hoặc chat trực tuyến)
+                                    </span>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
-            </section>
+                </div>
 
-            <section class="new-arrival">
-                <div class="container border-bottom">
-                    <div class="row mt-30 mt-30-mobile">
-                        <div class="col-md-12 col-sm-12">
-                            <h2 class="new-arrival__text">Hàng Mới Về</h2>
-                        </div>
-                    </div>
-                    <div class="row mb-60">
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-1.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Louis Vuitton</h3>
-                                    <p class="product__description">
-                                        Balo Louis Vuitton Damier Graphite Christopher PM
-                                    </p>
-                                </div>
-                                <span class="product__price">62.400.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 44cm x R: 10cm C: 34 cm</span>
+                <div class="kdhh__contact">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="kdhh__contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>
+                                    <strong style="font-size: 1.6rem;">Liên hệ tư vấn kiểm định</strong>
+                                    <br>
+                                    Vui lòng liên hệ ngay
+                                    <br>
+                                    HOTLINE: <a href="" style="color: #D1AF66;">1900 292984</a>
+                                    <br>
+                                    <br>
+                                    Thời gian liên hệ
+                                    <br>
+                                    Thứ hai - Thứ sáu: 8h30 - 18h
+                                    <br>
+                                    ◦ Thứ bảy: 8h30 - 12h
+                                    <br>
+                                    ◦ (Hoặc chat trực tuyến)
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-2.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Dior</h3>
-                                    <p class="product__description">
-                                        Túi Xách Lady Dior Medium Cannage Black Leather
-                                    </p>
-                                </div>
-                                <span class="product__price">75.300.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 23cm x R: 12cm C: 20 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-3.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Gucci</h3>
-                                    <p class="product__description">
-                                        Túi Xách Gucci 2018 Web-Accented Leather
-                                    </p>
-                                </div>
-                                <span class="product__price">39.700.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 36cm x R: 7cm C: 28.5 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-4.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Louis Vuitton</h3>
-                                    <p class="product__description">
-                                        Túi Xách Louis Vuitton Sac Capucines PM
-                                    </p>
-                                </div>
-                                <span class="product__price">89.000.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 30cm x R: 11cm C: 19 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-5.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Saint Laurent</h3>
-                                    <p class="product__description">
-                                        Ví Saint Laurent Black Leather
-                                    </p>
-                                </div>
-                                <span class="product__price">17.700.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 19cm x R: 3cm C: 10.5 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-6.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Louis Vuitton</h3>
-                                    <p class="product__description">
-                                        Túi Xách Louis Vuitton Porte-Doccuments Voyage Epi Leather
-                                    </p>
-                                </div>
-                                <span class="product__price">26.000.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 41cm x R: 6cm C: 31 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-7.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Prada</h3>
-                                    <p class="product__description">
-                                        Túi Xách Prada Crocodile Trimmed Saffiano Leather
-                                    </p>
-                                </div>
-                                <span class="product__price">39.700.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 37cm x R: 7cm C: 28.5 cm</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6 mt-20 ">
-                            <div class="product__info">
-                                <img src="./assets/img/new-arrival-img-8.jpeg" alt="" class="product__img">
-                                <div class="product__product-text">
-                                    <h3 class="product__heading">Burberry</h3>
-                                    <p class="product__description">
-                                        Túi Xách Burberry Small TB Leather In Red
-                                    </p>
-                                </div>
-                                <span class="product__price">35.200.000 <span>đ</span></span>
-                                <br>
-                                <span class="product__size">D: 17cm x R: 6cm C: 13 cm</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pb-60 pb-30-mobile">
-                        <div class="col-md-12 col-sm-12 text-align-center ">
-                            <a href="" class="new-arrivial__view-more">Xem Thêm</a>
+                        <div class="col-md-9">
+                            <img class="kdhh__certificate-img" src="./assets/img/kiem-dinh-hang-hieu-banner.jpeg" alt="">
                         </div>
                     </div>
                 </div>
-            </section>
+        
+            </div>
+        </section>
 
-            <section class="blog">
-                <div class="container">
-                    <div class="row mt-30">
-                        <div class="col-md-12 col-sm-12">
-                            <h2 class="blog__text">Blog</h2>
-                        </div>
-                    </div>
-                    <div class="row mb-60">
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-1.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Ngọc Thanh Tâm xả kho hàng hiệu ủng hộ quỹ Vaccine</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-2.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Loạt túi hiệu sang tay giảm giá sâu thời dịch</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-3.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Omega Speedmaster Silver Snoopy Anniversary 50 kỷ niệm các sứ mệnh Apollo</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mt-30">
-                            <div class="blog__info">
-                                <img src="./assets/img/blog-img-4.jpeg" alt="" class="blog__img">
-                                <h3 class="blog__heading">Thương hiệu xa xỉ Louis Vuitton mang vũ trụ vào BST nữ trang siêu cao cấp “Stellar Times”</h3>
-                                <span class="blog__time">
-                                    <i class="blog__time-icon far fa-clock"></i>
-                                    21/07/2021
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pb-60 pb-30-mobile">
-                        <div class="col-md-12 col-sm-12 text-align-center ">
-                            <a href="" class="blog__view-more">Xem Thêm</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
     </div>
 
     <div class="email-register">
@@ -1501,99 +1712,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="./assets/script/slidebar.js"></script>
-    <script>
-        // Slider
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 3000)
-
-        // Mobile menu
-        const mobileMenuIcon = document.querySelector('.js-header__navbar-menu-icon');
-        const overlayMenuBar = document.querySelector('.js-menu-mobile-overlay');
-
-        // Mobile Menu Item
-        const mobileMenuItemBrand = document.querySelector('.js-menu-mobile-item--brand');
-        const mobileMenuItemHandBag = document.querySelector('.js-menu-mobile-item--hand-bag');
-        const mobileMenuItemShoes = document.querySelector('.js-menu-mobile-item--shoes');
-        const mobileMenuWatch = document.querySelector('.js-menu-mobile-item--watch');
-        const mobileMenuAccessories = document.querySelector('.js-menu-mobile-item--accessories')
-        const mobileMenuServices = document.querySelector('.js-menu-mobile-item--services')
-
-        // Show and Hide Mobile Menu
-        function showMobileMenu() {
-            document.getElementById("js-header__navbar-mobile-menu").style.transform = 'translateX(0%)';
-            document.getElementById("js-menu-mobile-overlay").style.display = 'block';
-        }
-
-        function hideMobileMenu() {
-            document.getElementById("js-header__navbar-mobile-menu").style.transform = 'translateX(-100%)'
-            document.getElementById("js-menu-mobile-overlay").style.display = 'none';
-        }
-
-        // Show Sub Menu
-        function showSubMenuBrand() {
-            document.getElementById("js-dropdown-mobile-menu--brand").style.transform = 'translateX(0)'
-        }
-        function showSubMenuHandBag() {
-            document.getElementById("js-dropdown-mobile-menu--hand-bag").style.transform = 'translateX(0)'
-        }
-        function showSubMenuShoes() {
-            document.getElementById("js-dropdown-mobile-menu--shoes").style.transform = 'translateX(0)'
-        }
-        function showSubMenuWatch() {
-            document.getElementById("js-dropdown-mobile-menu--watch").style.transform = 'translateX(0)'
-        }
-        function showSubMenuAccessories() {
-            document.getElementById("js-dropdown-mobile-menu--accessories").style.transform = 'translateX(0)'
-        }
-        function showSubMenuServices() {
-            document.getElementById("js-dropdown-mobile-menu--services").style.transform = 'translateX(0)'
-        }
-
-        // Hide Sub Menu
-        function hideSubMenuBrand() {
-            document.getElementById("js-dropdown-mobile-menu--brand").style.transform = 'translateX(-100%)'
-        }
-        function hideSubMenuHandBag() {
-            document.getElementById("js-dropdown-mobile-menu--hand-bag").style.transform = 'translateX(-100%)'
-        }
-        function hideSubMenuShoes() {
-            document.getElementById("js-dropdown-mobile-menu--shoes").style.transform = 'translateX(-100%)'
-        }
-        function hideSubMenuWatch() {
-            document.getElementById("js-dropdown-mobile-menu--watch").style.transform = 'translateX(-100%)'
-        }
-        function hideSubMenuAccessories() {
-            document.getElementById("js-dropdown-mobile-menu--accessories").style.transform = 'translateX(-100%)'
-        }
-        function hideSubMenuServices() {
-            document.getElementById("js-dropdown-mobile-menu--services").style.transform = 'translateX(-100%)'
-        }
-
-
-        // Click to Show and Hide Mobile Menu
-        mobileMenuIcon.addEventListener('click',showMobileMenu);
-        overlayMenuBar.addEventListener('click',hideMobileMenu);
-        
-
-        // Click to show Sub Menu
-        mobileMenuItemBrand.addEventListener('click', showSubMenuBrand);
-        mobileMenuItemHandBag.addEventListener('click', showSubMenuHandBag)
-        mobileMenuItemShoes.addEventListener('click',showSubMenuShoes);
-        mobileMenuWatch.addEventListener('click',showSubMenuWatch);
-        mobileMenuAccessories.addEventListener('click',showSubMenuAccessories)
-        mobileMenuServices.addEventListener('click',showSubMenuServices)
-
-    
-        const backMobileMenuItemBrand = document.querySelector('.js-dropdown-mobile-menu-back');
-
-        // backMobileMenuItemBrand.addEventListener('click', console())
-    </script>
+    <script src="./assets/script/mobile-menu-and-filter-search.js"></script>
+    <script src="./assets/script/ky-gui.js"></script>
+    <script src="./assets/script/kiem-dinh-hang-hieu.js"></script>
 </body>
 </html>

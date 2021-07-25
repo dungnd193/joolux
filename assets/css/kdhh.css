@@ -1,0 +1,352 @@
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 576px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 768px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 992px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .offset-md-3 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1139px){
+    .offset-md-1dot5 {
+        margin-left: 12.5%;
+    }
+}
+
+@media (min-width: 576px) {
+    .offset-3 {
+        margin-left: 0;
+    }
+}
+
+/* KDHH banner */
+.kdhh__banner-detail {
+    text-align: center;
+}
+
+.kdhh__title {
+    font-size: 3rem;
+    font-weight: 600;  
+    margin: 24px 0;
+}
+
+.kdhh__img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* KDHH content */
+.kdhh__content-list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.kdhh__content-item {
+    font-size: 2rem;
+    padding: 8px 16px;
+}
+
+.kdhh__content-item:hover {
+    cursor: pointer;
+}
+
+.kdhh__content-item-checked {
+    font-weight: 600;
+    border-bottom: 2px solid #101010;
+}
+
+/* Dich vu kiem dinh */
+.kdhh__technology,
+.ky-gui__question {
+    display: none;
+}
+
+
+
+.kdhh__dvkd-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.kdhh__dvkd-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.kdhh__dvkd-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.kdhh__dvkd-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid #CFCFCF;
+    margin-bottom: 20px;
+}
+
+.kdhh__dvkd-input:focus {
+    border: 1px solid #101010;
+}
+
+.kdhh__dvkd-button {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 8px 16px;
+    border: none;
+}
+
+.kdhh__dvkd-button:hover {
+    background-color: #585858;
+}
+
+.kdhh__price {
+    text-align: center;
+}
+
+.kdhh__price-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+}
+
+.kdhh__price-text {
+    color: #454545;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.kdhh__price-info {
+    border: 1px solid #CFCFCF;
+}
+
+.kdhh__price-brand {
+    text-align: center;
+    background-color: var(--black-color);
+    padding: 20px 0;
+}
+
+.kdhh__price-brand-name {
+    color: var(--white-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.kdhh__price-content {
+    text-align: center;
+    padding: 32px;
+}
+
+
+.kdhh__price-heading {
+    color: #101010;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.kdhh__price-percent {
+    color: #d1af66;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.kdhh__price-text {
+    color: #878787;
+    font-size: 1.4rem;
+}
+
+.kdhh__price-minium {
+    color: #101010;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.kdhh__price-list-text {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.kdhh__price-list-text > li {
+    font-size: 1.6rem;
+}
+
+.kdhh__about-title {
+    text-align: center;
+}
+
+.kdhh__about-title > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 32px 0 48px;
+}
+
+.kdhh__about-paragraph {
+    font-size: 1.4rem;
+}
+
+.kdhh__about-img {
+    width: 100%;
+}
+
+.kdhh__certificate-title {
+    text-align: center;
+}
+
+.kdhh__certificate-title > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 30px 0 20px;
+}
+
+.kdhh__certificate-title > p {
+    color: #101010;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+}
+
+.kdhh__certificate-paragraph {
+    font-size: 1.4rem;
+}
+.kdhh__certificate-img {
+    width: 100%;
+}
+
+.kdhh__contact > i {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.kdhh__contact > p {
+    font-size: 1.4rem;
+}
+
+.kdhh__certificate-contact-list {
+    padding-left: 0;
+    margin: 0;
+}
+
+.kdhh__technology-title {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.kdhh__technology-website {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d1af66;
+}
+
+.kdhh__technology-website:hover {
+    text-decoration: none;
+    color: #d1af66;
+}
+
+.kdhh__technology-description {
+    font-size: 1.4rem;
+}
+
+.kdhh__technology-img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.kdhh__technology-img-text {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.kdhh__technology-description-img {
+    width: 100%;
+}
+
+.kdhh__technology-brand {
+    border: 1px solid #cfcfcf;
+    padding: 16px 24px 24px 24px;
+}
+
+.kdhh__technology-brand-img {
+    width: 100%;
+}
+
+.kdhh__technology-brand-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.kdhh__technology-brand-name {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.kdhh__technology-brand-direct {
+    font-size: 1.2rem;
+    color: #d1af66;
+}
+
+.kdhh__technology-brand-direct:hover {
+    color: #d1af66;
+}
+
