@@ -1,0 +1,47 @@
+.textarea-input {
+    outline: none;
+    width: 100%;
+    border-color: #cfcfcf;
+    border-radius: 0;
+    resize: none;
+    padding: 10px 14px;
+    margin-bottom: 30px;
+}
+
+.textarea-input::placeholder {
+    color: #A1A1A1;
+    font-size: 1.4rem;
+}
+
+.dia-diem-nhan-hang {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.dv__che-tac {
+    display: none;
+}
+
+.dv-item-checked {
+    font-weight: 600; 
+    border-bottom: 2px solid #101010;
+}
+
+.dv-list {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.dv-item {
+    padding: 8px 16px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}

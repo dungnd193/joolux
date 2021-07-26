@@ -9,7 +9,10 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/dich-vu.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/cham-soc-hang-hieu.css">
+    <link rel="stylesheet" href="./assets/css/kdhh.css">
+    <link rel="stylesheet" href="./assets/css/ky-gui.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
@@ -871,50 +874,94 @@
     <div class="menu-mobile-overlay js-menu-mobile-overlay" id="js-menu-mobile-overlay"></div>
   
     <div class="content">
-            <div class="service">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 service__title mt-20">
-                            <h2 class="">Dịch vụ của chúng tôi</h2>
-                        </div>
-                    </div>
-                    <div class="row pb-40">
-                        <div class="col-md-4 mt-40">
-                            <a href="./kiem-dinh-hang-hieu.html" class="service__link">
-                                <div class="service__option">
-                                    <img src="./assets/img/service-option-img-1.jpeg" alt="" class="service__option-img">
-                                    <div class="service__option-text">
-                                        <h3 class="service__option-heading">Kiểm định hàng hiệu</h3>
-                                        <a href="./kiem-dinh-hang-hieu.html" class="service__option-direct">Tìm Hiểu Ngay</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 mt-40">
-                            <a href="./cham-soc-hang-hieu.html" class="service__link">
-                                <div class="service__option">
-                                    <img src="./assets/img/service-option-img-2.jpeg" alt="" class="service__option-img">
-                                    <div class="service__option-text">
-                                        <h3 class="service__option-heading">Chăm sóc và chế tác hàng hiệu</h3>
-                                        <a href="./cham-soc-hang-hieu.html" class="service__option-direct">Tìm Hiểu Ngay</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 mt-40">
-                            <a href="#" class="service__link">
-                                <div class="service__option">
-                                    <img src="./assets/img/service-option-img-3.jpeg" alt="" class="service__option-img">
-                                    <div class="service__option-text">
-                                        <h3 class="service__option-heading upcoming">Cho thuê hàng hiệu</h3>
-                                        <a class="service__option-direct upcoming">Upcoming</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+        <section class="kdhh__banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 kdhh__banner-detail">
+                        <h2 class="kdhh__title">Dịch vụ spa và chế tác hàng hiệu</h2>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="kdhh__content">
+            <div class="container">
+                
+                <div class="kdhh__dvkd" id="kdhh__dvkd">
+                    <div class="row border-bottom">
+                        <h3 class="col-lg-12 kdhh__dvkd-title">Đăng Ký Dịch Vụ</h3>
+                        <h4 class="col-lg-4 kdhh__dvkd-text">Thông tin người sử dụng dịch vụ</h4>
+                        <div class="col-lg-4">
+                            <h4 class="kdhh__dvkd-heading">Họ và tên *</h4>
+                            <input type="text" placeholder="Nhập họ và tên đầy đủ" class="kdhh__dvkd-input">
+                            <h4 class="kdhh__dvkd-heading">Số điện thoại *</h4>
+                            <input type="text" placeholder="Số điện thoại để nhận hàng" class="kdhh__dvkd-input">
+                        </div>
+                        <div class="col-lg-4">
+                            <h4 class="kdhh__dvkd-heading">Địa chỉ email *</h4>
+                            <input type="text" placeholder="Địa chỉ email để xác nhận đơn hàng" class="kdhh__dvkd-input">
+                            <h4 class="kdhh__dvkd-heading">Địa chỉ *</h4>
+                            <input type="text" placeholder="Vui lòng ghi cụ thể địa chỉ toà nhà..." class="kdhh__dvkd-input">
+                        </div>
+                    </div>
+                    <div class="row border-bottom  mt-30 pb-30">
+                        <h4 class="col-lg-4 kdhh__dvkd-text">Chọn loại dịch vụ</h4>
+                        <div class="col-lg-8">
+                            <ul class="dv-list">
+                                <li class="dv-item dv-item-checked" id="dich-vu-spa">Dịch vụ spa</li>
+                                <li class="dv-item" id="dich-vu-che-tac">Dịch vụ chế tác</li>
+                            </ul>
+                            <div class="dv__spa" id="dv__spa">
+                                <h4 class="kdhh__dvkd-heading">Ghi chú yêu cầu</h4>
+                                <textarea name="note" id="" rows="4" placeholder="Thêm ghi chú về yêu cầu" class="textarea-input"></textarea>
+                                <h4 class="kdhh__dvkd-heading">Phương thức gửi Spa</h4>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-8">
+                                        <label class="product__menu-item-option">
+                                            Joolux trực tiếp đến kiểm định tại nhà
+                                            <input type="radio" hidden>
+                                            <span class="radio-button"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-12 mb-8">
+                                        <label class="product__menu-item-option">
+                                            Bạn mang sản phẩm đến các điểm nhận hàng của Joolux
+                                            <input type="radio" hidden>
+                                            <span class="radio-button"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4 class="kdhh__dvkd-heading">Chọn điểm nhận hàng</h4>
+                                        <select name="" id="" class="dia-diem-nhan-hang">
+                                            <option value="">46 Nguyễn Thị Minh Khai, Phường Đakao, Quận 1, Tp. Hồ Chí Minh</option>
+                                            <option value="">Y-Nest tầng 4 toà nhà Hoà Bình Green, 505 Minh Khai, Phường Vĩnh Phú, Quận Hai Bà Trưng, Hà Nội</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button class="kdhh__dvkd-button">Đăng Ký Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dv__che-tac" id="dv__che-tac">
+                                <h4 class="kdhh__dvkd-heading">Ghi chú yêu cầu *</h4>
+                                <textarea name="note" id="" rows="4" placeholder="Thêm ghi chú về yêu cầu" class="textarea-input"></textarea>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button class="kdhh__dvkd-button">Đăng Ký Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+        
+            </div>
+        </section>
+
     </div>
 
     <div class="email-register">
@@ -1146,5 +1193,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="./assets/script/mobile-menu-and-filter-search.js"></script>
+    <script src="./assets/script/cham-soc-hang-hieu.js"></script>
 </body>
 </html>
