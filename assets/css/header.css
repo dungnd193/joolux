@@ -121,14 +121,6 @@
     overflow-y: scroll;
 }
 
-.transform-translateX0 {
-    transform: translateX(-0%) !important;
-}
-
-.transform-translateX100 {
-    transform: translateX(-100%) !important;
-}
-
 .dropdown-mobile-menu-back {
     margin: 0;
     padding: 30px 22px;

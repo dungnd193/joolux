@@ -465,14 +465,14 @@
                     HÀNG MỚI VỀ
                 </a>
             </li>
-            <li onclick="showSubMenuBrand()" class="menu-mobile-item js-menu-mobile-item--brand">
+            <li class="menu-mobile-item js-menu-mobile-item--brand">
                 <a>
                     THƯƠNG HIỆU
                 </a>
                 <i class="fas fa-chevron-right"></i>
                 <div class="dropdown-mobile-menu" id="js-dropdown-mobile-menu--brand">
                     <div>
-                        <h3 onclick="hideSubMenuBrand()" class="dropdown-mobile-menu-back">
+                        <h3 class="dropdown-mobile-menu-back dropdown-mobile-menu-back--brand">
                             <i class="fas fa-long-arrow-alt-left"></i>
                             Quay Lại
                         </h3>         
@@ -532,13 +532,13 @@
                     </ul>        
                 </div>
             </li>
-            <li onclick="showSubMenuHandBag()" class="menu-mobile-item js-menu-mobile-item--hand-bag">
+            <li class="menu-mobile-item js-menu-mobile-item--hand-bag">
                 <a>
                     TÚI XÁCH
                 </a>
                 <i class="fas fa-chevron-right"></i>
                 <div class="dropdown-mobile-menu" id="js-dropdown-mobile-menu--hand-bag">
-                    <h3 class="dropdown-mobile-menu-back js-dropdown-mobile-menu-back">
+                    <h3 class="dropdown-mobile-menu-back dropdown-mobile-menu-back--hand-bag">
                         <i class="fas fa-long-arrow-alt-left"></i>
                         Quay Lại
                     </h3>         
@@ -591,13 +591,13 @@
                     </ul>        
                 </div>
             </li>
-            <li  onclick="showSubMenuShoes()" class="menu-mobile-item js-menu-mobile-item--shoes">
+            <li class="menu-mobile-item js-menu-mobile-item--shoes">
                 <a>
                     GIÀY & SNEAKER
                 </a>
                 <i class="fas fa-chevron-right"></i>
                 <div class="dropdown-mobile-menu" id="js-dropdown-mobile-menu--shoes">
-                    <h3 class="dropdown-mobile-menu-back js-dropdown-mobile-menu-back">
+                    <h3 class="dropdown-mobile-menu-back dropdown-mobile-menu-back--shoes">
                         <i class="fas fa-long-arrow-alt-left"></i>
                         Quay Lại
                     </h3>         
@@ -667,13 +667,13 @@
                     </ul>        
                 </div>
             </li>
-            <li onclick="showSubMenuWatch()" class="menu-mobile-item js-menu-mobile-item--watch">
+            <li class="menu-mobile-item js-menu-mobile-item--watch">
                 <a>
                     ĐỒNG HỒ
                 </a>
                 <i class="fas fa-chevron-right"></i>
                 <div class="dropdown-mobile-menu" id="js-dropdown-mobile-menu--watch">
-                    <h3 class="dropdown-mobile-menu-back js-dropdown-mobile-menu-back">
+                    <h3 class="dropdown-mobile-menu-back dropdown-mobile-menu-back--watch">
                         <i class="fas fa-long-arrow-alt-left"></i>
                         Quay Lại
                     </h3>         
@@ -778,13 +778,13 @@
                     </ul>        
                 </div>
             </li>
-            <li onclick="showSubMenuAccessories()" class="menu-mobile-item js-menu-mobile-item--accessories">
+            <li class="menu-mobile-item js-menu-mobile-item--accessories">
                 <a>
                     PHỤ KIỆN
                 </a>
                 <i class="fas fa-chevron-right"></i>
                 <div class="dropdown-mobile-menu" id="js-dropdown-mobile-menu--accessories">
-                    <h3 class="dropdown-mobile-menu-back js-dropdown-mobile-menu-back">
+                    <h3 class="dropdown-mobile-menu-back dropdown-mobile-menu-back--accessories">
                         <i class="fas fa-long-arrow-alt-left"></i>
                         Quay Lại
                     </h3>         
@@ -842,13 +842,13 @@
                     KÝ GỬI
                 </a>
             </li>
-            <li onclick="showSubMenuServices()" class="menu-mobile-item js-menu-mobile-item--services">
+            <li class="menu-mobile-item js-menu-mobile-item--services">
                 <a>
                     DỊCH VỤ KHÁC
                 </a>
                 <i class="fas fa-chevron-right"></i>
                 <div class="dropdown-mobile-menu" id="js-dropdown-mobile-menu--services">
-                    <h3 class="dropdown-mobile-menu-back js-dropdown-mobile-menu-back">
+                    <h3 class="dropdown-mobile-menu-back dropdown-mobile-menu-back--services">
                         <i class="fas fa-long-arrow-alt-left"></i>
                         Quay Lại
                     </h3>         
@@ -1515,7 +1515,7 @@
             }
         }, 3000)
 
-        // Mobile menu
+        // Mobile menud
         const mobileMenuIcon = document.querySelector('.js-header__navbar-menu-icon');
         const overlayMenuBar = document.querySelector('.js-menu-mobile-overlay');
 
@@ -1526,6 +1526,13 @@
         const mobileMenuWatch = document.querySelector('.js-menu-mobile-item--watch');
         const mobileMenuAccessories = document.querySelector('.js-menu-mobile-item--accessories')
         const mobileMenuServices = document.querySelector('.js-menu-mobile-item--services')
+
+        const backMobileMenuItemBrand = document.querySelector('.dropdown-mobile-menu-back--brand');
+        const backMobileMenuItemHandBag = document.querySelector('.dropdown-mobile-menu-back--hand-bag');
+        const backMobileMenuItemShoes = document.querySelector('.dropdown-mobile-menu-back--shoes');
+        const backMobileMenuItemWatch = document.querySelector('.dropdown-mobile-menu-back--watch');
+        const backMobileMenuItemAccessories = document.querySelector('.dropdown-mobile-menu-back--accessories');
+        const backMobileMenuItemServices = document.querySelector('.dropdown-mobile-menu-back--services');
 
         // Show and Hide Mobile Menu
         function showMobileMenu() {
@@ -1540,41 +1547,47 @@
 
         // Show Sub Menu
         function showSubMenuBrand() {
-            document.getElementById("js-dropdown-mobile-menu--brand").style.transform = 'translateX(0)'
+            document.getElementById("js-dropdown-mobile-menu--brand").style.transform = 'translateX(0%)'
         }
         function showSubMenuHandBag() {
-            document.getElementById("js-dropdown-mobile-menu--hand-bag").style.transform = 'translateX(0)'
+            document.getElementById("js-dropdown-mobile-menu--hand-bag").style.transform = 'translateX(0%)'
         }
         function showSubMenuShoes() {
-            document.getElementById("js-dropdown-mobile-menu--shoes").style.transform = 'translateX(0)'
+            document.getElementById("js-dropdown-mobile-menu--shoes").style.transform = 'translateX(0%)'
         }
         function showSubMenuWatch() {
-            document.getElementById("js-dropdown-mobile-menu--watch").style.transform = 'translateX(0)'
+            document.getElementById("js-dropdown-mobile-menu--watch").style.transform = 'translateX(0%)'
         }
         function showSubMenuAccessories() {
-            document.getElementById("js-dropdown-mobile-menu--accessories").style.transform = 'translateX(0)'
+            document.getElementById("js-dropdown-mobile-menu--accessories").style.transform = 'translateX(0%)'
         }
         function showSubMenuServices() {
-            document.getElementById("js-dropdown-mobile-menu--services").style.transform = 'translateX(0)'
+            document.getElementById("js-dropdown-mobile-menu--services").style.transform = 'translateX(0%)'
         }
 
         // Hide Sub Menu
-        function hideSubMenuBrand() {
+        backMobileMenuItemBrand.onclick = function(e) {
+            e.stopPropagation();
             document.getElementById("js-dropdown-mobile-menu--brand").style.transform = 'translateX(-100%)'
         }
-        function hideSubMenuHandBag() {
+        backMobileMenuItemHandBag.onclick = function(e) {
+            e.stopPropagation();
             document.getElementById("js-dropdown-mobile-menu--hand-bag").style.transform = 'translateX(-100%)'
         }
-        function hideSubMenuShoes() {
+        backMobileMenuItemShoes.onclick = function(e) {
+            e.stopPropagation();
             document.getElementById("js-dropdown-mobile-menu--shoes").style.transform = 'translateX(-100%)'
         }
-        function hideSubMenuWatch() {
+        backMobileMenuItemWatch.onclick = function(e) {
+            e.stopPropagation();
             document.getElementById("js-dropdown-mobile-menu--watch").style.transform = 'translateX(-100%)'
         }
-        function hideSubMenuAccessories() {
+        backMobileMenuItemAccessories.onclick = function(e) {
+            e.stopPropagation();
             document.getElementById("js-dropdown-mobile-menu--accessories").style.transform = 'translateX(-100%)'
         }
-        function hideSubMenuServices() {
+        backMobileMenuItemServices.onclick = function(e) {
+            e.stopPropagation();
             document.getElementById("js-dropdown-mobile-menu--services").style.transform = 'translateX(-100%)'
         }
 
@@ -1593,7 +1606,6 @@
         mobileMenuServices.addEventListener('click',showSubMenuServices)
 
     
-        const backMobileMenuItemBrand = document.querySelector('.js-dropdown-mobile-menu-back');
 
         // backMobileMenuItemBrand.addEventListener('click', console())
     </script>
